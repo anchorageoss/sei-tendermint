@@ -1,7 +1,7 @@
 syntax = "proto3";
-package tendermint.consensus;
+package seitendermint.consensus;
 
-option go_package = "github.com/tendermint/tendermint/proto/tendermint/consensus";
+option go_package = "github.com/ari-anchor/sei-tendermint/proto/tendermint/consensus";
 
 import "gogoproto/gogo.proto";
 import "tendermint/consensus/types.proto";
@@ -32,7 +32,7 @@ message EndHeight {
 
 message WALMessage {
   oneof sum {
-    tendermint.types.EventDataRoundState event_data_round_state = 1;
+    seitendermint.types.EventDataRoundState event_data_round_state = 1;
     MsgInfo                              msg_info               = 2;
     TimeoutInfo                          timeout_info           = 3;
     EndHeight                            end_height             = 4;

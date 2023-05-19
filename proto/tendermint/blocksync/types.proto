@@ -1,7 +1,7 @@
 syntax = "proto3";
-package tendermint.blocksync;
+package seitendermint.blocksync;
 
-option go_package = "github.com/tendermint/tendermint/proto/tendermint/blocksync";
+option go_package = "github.com/ari-anchor/sei-tendermint/proto/tendermint/blocksync";
 
 import "tendermint/types/block.proto";
 import "tendermint/types/types.proto";
@@ -19,8 +19,8 @@ message NoBlockResponse {
 
 // BlockResponse returns block to the requested
 message BlockResponse {
-  tendermint.types.Block          block      = 1;
-  tendermint.types.ExtendedCommit ext_commit = 2;
+  seitendermint.types.Block          block      = 1;
+  seitendermint.types.ExtendedCommit ext_commit = 2;
 }
 
 // StatusRequest requests the status of a peer.

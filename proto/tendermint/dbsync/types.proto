@@ -1,7 +1,7 @@
 syntax = "proto3";
-package tendermint.dbsync;
+package seitendermint.dbsync;
 
-option go_package = "github.com/tendermint/tendermint/proto/tendermint/dbsync";
+option go_package = "github.com/ari-anchor/sei-tendermint/proto/tendermint/dbsync";
 
 import "gogoproto/gogo.proto";
 import "tendermint/types/types.proto";
@@ -45,7 +45,7 @@ message LightBlockRequest {
 }
 
 message LightBlockResponse {
-  tendermint.types.LightBlock light_block = 1;
+  seitendermint.types.LightBlock light_block = 1;
 }
 
 message ParamsRequest {
@@ -54,6 +54,6 @@ message ParamsRequest {
 
 message ParamsResponse {
   uint64                           height           = 1;
-  tendermint.types.ConsensusParams consensus_params = 2
+  seitendermint.types.ConsensusParams consensus_params = 2
       [(gogoproto.nullable) = false];
 }
