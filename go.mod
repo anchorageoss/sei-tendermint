@@ -6,7 +6,6 @@ require (
 	github.com/BurntSushi/toml v1.2.1
 	github.com/adlio/schema v1.3.4
 	github.com/btcsuite/btcd/btcec/v2 v2.3.2
-	github.com/btcsuite/btcutil v0.0.0-20190425235716-9e5f4b9a998d
 	github.com/bufbuild/buf v1.19.0
 	github.com/creachadair/atomicfile v0.3.0
 	github.com/creachadair/taskgroup v0.6.0
@@ -78,6 +77,7 @@ require (
 	github.com/bombsimon/wsl/v3 v3.4.0 // indirect
 	github.com/breml/bidichk v0.2.4 // indirect
 	github.com/breml/errchkjson v0.3.1 // indirect
+	github.com/btcsuite/btcd/btcutil v1.1.3
 	github.com/bufbuild/connect-go v1.7.0 // indirect
 	github.com/bufbuild/protocompile v0.5.1 // indirect
 	github.com/butuzov/ireturn v0.1.1 // indirect
