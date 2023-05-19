@@ -251,3 +251,5 @@ require (
 	go.opentelemetry.io/otel/sdk v1.9.0
 	go.opentelemetry.io/otel/trace v1.9.0
 )
+
+replace github.com/tendermint/tendermint => github.com/ari-anchor/sei-tendermint v0.0.0-20230517002018-d426f1fe475e
