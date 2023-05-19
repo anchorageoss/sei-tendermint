@@ -7,7 +7,7 @@ import (
 	fmt "fmt"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
-	crypto "github.com/ari-anchor/sei-tendermint/proto/tendermint/crypto"
+	crypto "github.com/tendermint/tendermint/proto/tendermint/crypto"
 	io "io"
 	math "math"
 	math_bits "math/bits"
@@ -158,6 +158,7 @@ func (m *PacketMsg) GetData() []byte {
 
 type Packet struct {
 	// Types that are valid to be assigned to Sum:
+	//
 	//	*Packet_PacketPing
 	//	*Packet_PacketPong
 	//	*Packet_PacketMsg

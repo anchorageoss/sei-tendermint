@@ -9,8 +9,8 @@ import (
 	proto "github.com/gogo/protobuf/proto"
 	_ "github.com/gogo/protobuf/types"
 	github_com_gogo_protobuf_types "github.com/gogo/protobuf/types"
-	crypto "github.com/ari-anchor/sei-tendermint/proto/tendermint/crypto"
-	version "github.com/ari-anchor/sei-tendermint/proto/tendermint/version"
+	crypto "github.com/tendermint/tendermint/proto/tendermint/crypto"
+	version "github.com/tendermint/tendermint/proto/tendermint/version"
 	io "io"
 	math "math"
 	math_bits "math/bits"
@@ -1294,6 +1294,7 @@ func (m *TxProof) GetProof() *crypto.Proof {
 
 type Evidence struct {
 	// Types that are valid to be assigned to Sum:
+	//
 	//	*Evidence_DuplicateVoteEvidence
 	//	*Evidence_LightClientAttackEvidence
 	Sum isEvidence_Sum `protobuf_oneof:"sum"`
