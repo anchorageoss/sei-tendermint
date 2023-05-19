@@ -7,11 +7,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/cmd/tendermint/commands"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/rpc/client/local"
-	rpctest "github.com/tendermint/tendermint/rpc/test"
-	e2e "github.com/tendermint/tendermint/test/e2e/app"
+	"github.com/ari-anchor/sei-tendermint/cmd/tendermint/commands"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	"github.com/ari-anchor/sei-tendermint/rpc/client/local"
+	rpctest "github.com/ari-anchor/sei-tendermint/rpc/test"
+	e2e "github.com/ari-anchor/sei-tendermint/test/e2e/app"
 )
 
 func TestRollbackIntegration(t *testing.T) {

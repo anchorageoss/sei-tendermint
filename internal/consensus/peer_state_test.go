@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/libs/log"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 func peerStateSetup(h, r, v int) *PeerState {

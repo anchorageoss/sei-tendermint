@@ -7,13 +7,13 @@ import (
 	"runtime/debug"
 	"sync"
 
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/internal/libs/clist"
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
-	protomem "github.com/tendermint/tendermint/proto/tendermint/mempool"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/config"
+	"github.com/ari-anchor/sei-tendermint/internal/libs/clist"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	"github.com/ari-anchor/sei-tendermint/libs/service"
+	protomem "github.com/ari-anchor/sei-tendermint/proto/tendermint/mempool"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 var (
@@ -325,7 +325,7 @@ func (r *Reactor) broadcastTxRoutine(ctx context.Context, peerID types.NodeID, m
 		memTx := nextGossipTx.Value.(*WrappedTx)
 
 		// NOTE: Transaction batching was disabled due to:
-		// https://github.com/tendermint/tendermint/issues/5796
+		// https://github.com/ari-anchor/sei-tendermint/issues/5796
 		if ok := r.mempool.txStore.TxHasPeer(memTx.hash, peerMempoolID); !ok {
 			// Send the mempool tx to the corresponding peer. Note, the peer may be
 			// behind and thus would not be able to process the mempool tx correctly.

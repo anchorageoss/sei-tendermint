@@ -8,16 +8,16 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/internal/consensus"
-	"github.com/tendermint/tendermint/internal/eventbus"
-	"github.com/tendermint/tendermint/internal/p2p"
-	sm "github.com/tendermint/tendermint/internal/state"
-	"github.com/tendermint/tendermint/internal/store"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
-	bcproto "github.com/tendermint/tendermint/proto/tendermint/blocksync"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/config"
+	"github.com/ari-anchor/sei-tendermint/internal/consensus"
+	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p"
+	sm "github.com/ari-anchor/sei-tendermint/internal/state"
+	"github.com/ari-anchor/sei-tendermint/internal/store"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	"github.com/ari-anchor/sei-tendermint/libs/service"
+	bcproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/blocksync"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 var _ service.Service = (*Reactor)(nil)
@@ -92,8 +92,8 @@ type Reactor struct {
 
 	syncStartTime time.Time
 
-	restartCh chan struct{}
-	blocksBehindThreshold uint64
+	restartCh                 chan struct{}
+	blocksBehindThreshold     uint64
 	blocksBehindCheckInterval time.Duration
 }
 
@@ -112,17 +112,17 @@ func NewReactor(
 	selfRemediationConfig *config.SelfRemediationConfig,
 ) *Reactor {
 	r := &Reactor{
-		logger:      logger,
-		stateStore:  stateStore,
-		blockExec:   blockExec,
-		store:       store,
-		consReactor: consReactor,
-		blockSync:   newAtomicBool(blockSync),
-		peerEvents:  peerEvents,
-		metrics:     metrics,
-		eventBus:    eventBus,
-		restartCh: restartCh,
-		blocksBehindThreshold: selfRemediationConfig.BlocksBehindThreshold,
+		logger:                    logger,
+		stateStore:                stateStore,
+		blockExec:                 blockExec,
+		store:                     store,
+		consReactor:               consReactor,
+		blockSync:                 newAtomicBool(blockSync),
+		peerEvents:                peerEvents,
+		metrics:                   metrics,
+		eventBus:                  eventBus,
+		restartCh:                 restartCh,
+		blocksBehindThreshold:     selfRemediationConfig.BlocksBehindThreshold,
 		blocksBehindCheckInterval: time.Duration(selfRemediationConfig.BlocksBehindCheckIntervalSeconds) * time.Second,
 	}
 
@@ -185,7 +185,6 @@ func (r *Reactor) OnStop() {
 		r.pool.Stop()
 	}
 }
-
 
 // respondToPeer loads a block and sends it to the requesting peer, if we have it.
 // Otherwise, we'll respond saying we do not have it.
@@ -591,7 +590,7 @@ func (r *Reactor) poolRoutine(ctx context.Context, stateSynced bool, blockSyncCh
 			first, second, extCommit := r.pool.PeekTwoBlocks()
 			if first != nil && extCommit == nil &&
 				state.ConsensusParams.ABCI.VoteExtensionsEnabled(first.Height) {
-				// See https://github.com/tendermint/tendermint/pull/8433#discussion_r866790631
+				// See https://github.com/ari-anchor/sei-tendermint/pull/8433#discussion_r866790631
 				panic(fmt.Errorf("peeked first block without extended commit at height %d - possible node store corruption", first.Height))
 			} else if first == nil || second == nil {
 				// we need to have fetched two consecutive blocks in order to

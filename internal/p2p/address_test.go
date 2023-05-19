@@ -8,9 +8,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 func TestNewNodeID(t *testing.T) {

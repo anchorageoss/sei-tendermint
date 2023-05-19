@@ -11,11 +11,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/version"
+	"github.com/ari-anchor/sei-tendermint/crypto"
+	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
+	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
+	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/version"
 )
 
 var defaultVoteTime = time.Date(2019, 1, 1, 0, 0, 0, 0, time.UTC)

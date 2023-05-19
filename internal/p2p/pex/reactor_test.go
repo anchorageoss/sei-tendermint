@@ -11,14 +11,14 @@ import (
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/internal/p2p/p2ptest"
-	"github.com/tendermint/tendermint/internal/p2p/pex"
-	"github.com/tendermint/tendermint/libs/log"
-	p2pproto "github.com/tendermint/tendermint/proto/tendermint/p2p"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/config"
+	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p/p2ptest"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p/pex"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	p2pproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/p2p"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 const (
@@ -102,7 +102,7 @@ func TestReactorSendsRequestsTooOften(t *testing.T) {
 }
 
 func TestReactorSendsResponseWithoutRequest(t *testing.T) {
-	t.Skip("This test needs updated https://github.com/tendermint/tendermint/issue/7634")
+	t.Skip("This test needs updated https://github.com/ari-anchor/sei-tendermint/issue/7634")
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
@@ -124,7 +124,7 @@ func TestReactorSendsResponseWithoutRequest(t *testing.T) {
 }
 
 func TestReactorNeverSendsTooManyPeers(t *testing.T) {
-	t.Skip("This test needs updated https://github.com/tendermint/tendermint/issue/7634")
+	t.Skip("This test needs updated https://github.com/ari-anchor/sei-tendermint/issue/7634")
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
@@ -239,7 +239,7 @@ func TestReactorLargePeerStoreInASmallNetwork(t *testing.T) {
 }
 
 func TestReactorWithNetworkGrowth(t *testing.T) {
-	t.Skip("This test needs updated https://github.com/tendermint/tendermint/issue/7634")
+	t.Skip("This test needs updated https://github.com/ari-anchor/sei-tendermint/issue/7634")
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 

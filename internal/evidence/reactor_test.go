@@ -15,16 +15,16 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/internal/eventbus"
-	"github.com/tendermint/tendermint/internal/evidence"
-	"github.com/tendermint/tendermint/internal/evidence/mocks"
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/internal/p2p/p2ptest"
-	sm "github.com/tendermint/tendermint/internal/state"
-	"github.com/tendermint/tendermint/libs/log"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/crypto"
+	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
+	"github.com/ari-anchor/sei-tendermint/internal/evidence"
+	"github.com/ari-anchor/sei-tendermint/internal/evidence/mocks"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p/p2ptest"
+	sm "github.com/ari-anchor/sei-tendermint/internal/state"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 var (

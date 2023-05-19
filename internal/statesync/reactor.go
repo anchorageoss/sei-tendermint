@@ -11,20 +11,20 @@ import (
 	"sync"
 	"time"
 
+	abciclient "github.com/ari-anchor/sei-tendermint/abci/client"
+	abci "github.com/ari-anchor/sei-tendermint/abci/types"
+	"github.com/ari-anchor/sei-tendermint/config"
+	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p"
+	sm "github.com/ari-anchor/sei-tendermint/internal/state"
+	"github.com/ari-anchor/sei-tendermint/internal/store"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	"github.com/ari-anchor/sei-tendermint/libs/service"
+	"github.com/ari-anchor/sei-tendermint/light"
+	"github.com/ari-anchor/sei-tendermint/light/provider"
+	ssproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/statesync"
+	"github.com/ari-anchor/sei-tendermint/types"
 	"github.com/gogo/protobuf/proto"
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/internal/eventbus"
-	"github.com/tendermint/tendermint/internal/p2p"
-	sm "github.com/tendermint/tendermint/internal/state"
-	"github.com/tendermint/tendermint/internal/store"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
-	"github.com/tendermint/tendermint/light"
-	"github.com/tendermint/tendermint/light/provider"
-	ssproto "github.com/tendermint/tendermint/proto/tendermint/statesync"
-	"github.com/tendermint/tendermint/types"
 )
 
 var (
@@ -182,7 +182,7 @@ type Reactor struct {
 	lastNoAvailablePeers time.Time
 
 	// Used to signal a restart the node on the application level
-	restartCh chan struct{}
+	restartCh                     chan struct{}
 	restartNoAvailablePeersWindow time.Duration
 }
 
@@ -208,23 +208,23 @@ func NewReactor(
 	selfRemediationConfig *config.SelfRemediationConfig,
 ) *Reactor {
 	r := &Reactor{
-		logger:               logger,
-		chainID:              chainID,
-		initialHeight:        initialHeight,
-		cfg:                  cfg,
-		conn:                 conn,
-		peerEvents:           peerEvents,
-		tempDir:              tempDir,
-		stateStore:           stateStore,
-		blockStore:           blockStore,
-		peers:                light.NewPeerList(),
-		providers:            make(map[types.NodeID]*light.BlockProvider),
-		metrics:              ssMetrics,
-		eventBus:             eventBus,
-		postSyncHook:         postSyncHook,
-		needsStateSync:       needsStateSync,
-		lastNoAvailablePeers: time.Time{},
-		restartCh:            restartCh,
+		logger:                        logger,
+		chainID:                       chainID,
+		initialHeight:                 initialHeight,
+		cfg:                           cfg,
+		conn:                          conn,
+		peerEvents:                    peerEvents,
+		tempDir:                       tempDir,
+		stateStore:                    stateStore,
+		blockStore:                    blockStore,
+		peers:                         light.NewPeerList(),
+		providers:                     make(map[types.NodeID]*light.BlockProvider),
+		metrics:                       ssMetrics,
+		eventBus:                      eventBus,
+		postSyncHook:                  postSyncHook,
+		needsStateSync:                needsStateSync,
+		lastNoAvailablePeers:          time.Time{},
+		restartCh:                     restartCh,
 		restartNoAvailablePeersWindow: time.Duration(selfRemediationConfig.StatesyncNoPeersRestartWindowSeconds) * time.Second,
 	}
 

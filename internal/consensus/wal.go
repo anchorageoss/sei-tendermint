@@ -12,13 +12,13 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/tendermint/tendermint/internal/jsontypes"
-	auto "github.com/tendermint/tendermint/internal/libs/autofile"
-	"github.com/tendermint/tendermint/libs/log"
-	tmos "github.com/tendermint/tendermint/libs/os"
-	"github.com/tendermint/tendermint/libs/service"
-	tmtime "github.com/tendermint/tendermint/libs/time"
-	tmcons "github.com/tendermint/tendermint/proto/tendermint/consensus"
+	"github.com/ari-anchor/sei-tendermint/internal/jsontypes"
+	auto "github.com/ari-anchor/sei-tendermint/internal/libs/autofile"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	tmos "github.com/ari-anchor/sei-tendermint/libs/os"
+	"github.com/ari-anchor/sei-tendermint/libs/service"
+	tmtime "github.com/ari-anchor/sei-tendermint/libs/time"
+	tmcons "github.com/ari-anchor/sei-tendermint/proto/tendermint/consensus"
 )
 
 const (

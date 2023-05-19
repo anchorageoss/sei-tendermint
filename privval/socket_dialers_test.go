@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	tmnet "github.com/tendermint/tendermint/libs/net"
+	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
+	tmnet "github.com/ari-anchor/sei-tendermint/libs/net"
 )
 
 // getFreeLocalhostAddrPort returns a free localhost:port address

@@ -10,10 +10,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	ctest "github.com/tendermint/tendermint/internal/libs/test"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
+	"github.com/ari-anchor/sei-tendermint/crypto"
+	"github.com/ari-anchor/sei-tendermint/crypto/tmhash"
+	ctest "github.com/ari-anchor/sei-tendermint/internal/libs/test"
+	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
 )
 
 type testItem []byte

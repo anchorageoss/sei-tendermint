@@ -5,33 +5,32 @@
 // Clients register subscriptions with a query to select which messages they
 // wish to receive. When messages are published, they are broadcast to all
 // clients whose subscription query matches that message. Queries are
-// constructed using the github.com/tendermint/tendermint/internal/pubsub/query
+// constructed using the github.com/ari-anchor/sei-tendermint/internal/pubsub/query
 // package.
 //
 // Example:
 //
-//     q, err := query.New(`account.name='John'`)
-//     if err != nil {
-//         return err
-//     }
-//     sub, err := pubsub.SubscribeWithArgs(ctx, pubsub.SubscribeArgs{
-//         ClientID: "johns-transactions",
-//         Query:    q,
-//     })
-//     if err != nil {
-//         return err
-//     }
+//	q, err := query.New(`account.name='John'`)
+//	if err != nil {
+//	    return err
+//	}
+//	sub, err := pubsub.SubscribeWithArgs(ctx, pubsub.SubscribeArgs{
+//	    ClientID: "johns-transactions",
+//	    Query:    q,
+//	})
+//	if err != nil {
+//	    return err
+//	}
 //
-//     for {
-//         next, err := sub.Next(ctx)
-//         if err == pubsub.ErrTerminated {
-//            return err // terminated by publisher
-//         } else if err != nil {
-//            return err // timed out, client unsubscribed, etc.
-//         }
-//         process(next)
-//     }
-//
+//	for {
+//	    next, err := sub.Next(ctx)
+//	    if err == pubsub.ErrTerminated {
+//	       return err // terminated by publisher
+//	    } else if err != nil {
+//	       return err // timed out, client unsubscribed, etc.
+//	    }
+//	    process(next)
+//	}
 package pubsub
 
 import (
@@ -40,11 +39,11 @@ import (
 	"fmt"
 	"sync"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/internal/pubsub/query"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/ari-anchor/sei-tendermint/abci/types"
+	"github.com/ari-anchor/sei-tendermint/internal/pubsub/query"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	"github.com/ari-anchor/sei-tendermint/libs/service"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 var (

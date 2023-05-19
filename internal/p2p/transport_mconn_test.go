@@ -10,9 +10,9 @@ import (
 	"github.com/fortytw2/leaktest"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/internal/p2p/conn"
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p/conn"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
 )
 
 // Transports are mainly tested by common tests in transport_test.go, we

@@ -10,26 +10,26 @@ import (
 
 	"github.com/rs/cors"
 
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/internal/blocksync"
-	"github.com/tendermint/tendermint/internal/consensus"
-	"github.com/tendermint/tendermint/internal/eventbus"
-	"github.com/tendermint/tendermint/internal/eventlog"
-	"github.com/tendermint/tendermint/internal/mempool"
-	"github.com/tendermint/tendermint/internal/p2p"
-	tmpubsub "github.com/tendermint/tendermint/internal/pubsub"
-	"github.com/tendermint/tendermint/internal/pubsub/query"
-	sm "github.com/tendermint/tendermint/internal/state"
-	"github.com/tendermint/tendermint/internal/state/indexer"
-	"github.com/tendermint/tendermint/internal/statesync"
-	tmjson "github.com/tendermint/tendermint/libs/json"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/strings"
-	"github.com/tendermint/tendermint/rpc/coretypes"
-	rpcserver "github.com/tendermint/tendermint/rpc/jsonrpc/server"
-	"github.com/tendermint/tendermint/types"
+	abciclient "github.com/ari-anchor/sei-tendermint/abci/client"
+	"github.com/ari-anchor/sei-tendermint/config"
+	"github.com/ari-anchor/sei-tendermint/crypto"
+	"github.com/ari-anchor/sei-tendermint/internal/blocksync"
+	"github.com/ari-anchor/sei-tendermint/internal/consensus"
+	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
+	"github.com/ari-anchor/sei-tendermint/internal/eventlog"
+	"github.com/ari-anchor/sei-tendermint/internal/mempool"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p"
+	tmpubsub "github.com/ari-anchor/sei-tendermint/internal/pubsub"
+	"github.com/ari-anchor/sei-tendermint/internal/pubsub/query"
+	sm "github.com/ari-anchor/sei-tendermint/internal/state"
+	"github.com/ari-anchor/sei-tendermint/internal/state/indexer"
+	"github.com/ari-anchor/sei-tendermint/internal/statesync"
+	tmjson "github.com/ari-anchor/sei-tendermint/libs/json"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	"github.com/ari-anchor/sei-tendermint/libs/strings"
+	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
+	rpcserver "github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/server"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 const (
@@ -237,7 +237,7 @@ func (env *Environment) StartService(ctx context.Context, conf *config.Config) (
 	cfg.MaxOpenConnections = conf.RPC.MaxOpenConnections
 	// If necessary adjust global WriteTimeout to ensure it's greater than
 	// TimeoutBroadcastTxCommit.
-	// See https://github.com/tendermint/tendermint/issues/3435
+	// See https://github.com/ari-anchor/sei-tendermint/issues/3435
 	// Note we don't need to adjust anything if the timeout is already unlimited.
 	if cfg.WriteTimeout > 0 && cfg.WriteTimeout <= conf.RPC.TimeoutBroadcastTxCommit {
 		cfg.WriteTimeout = conf.RPC.TimeoutBroadcastTxCommit + 1*time.Second

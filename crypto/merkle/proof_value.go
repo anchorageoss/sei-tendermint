@@ -5,7 +5,7 @@ import (
 	"crypto/sha256"
 	"fmt"
 
-	tmcrypto "github.com/tendermint/tendermint/proto/tendermint/crypto"
+	tmcrypto "github.com/ari-anchor/sei-tendermint/proto/tendermint/crypto"
 )
 
 const ProofOpValue = "simple:v"

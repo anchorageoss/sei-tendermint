@@ -2,20 +2,21 @@ package types
 
 import (
 	"context"
-	"github.com/tendermint/tendermint/version"
 	"math"
 	"testing"
 	"time"
+
+	"github.com/ari-anchor/sei-tendermint/version"
 
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/internal/libs/protoio"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
-	tmtime "github.com/tendermint/tendermint/libs/time"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/crypto"
+	"github.com/ari-anchor/sei-tendermint/internal/libs/protoio"
+	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
+	tmtime "github.com/ari-anchor/sei-tendermint/libs/time"
+	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
 )
 
 func generateHeader() Header {

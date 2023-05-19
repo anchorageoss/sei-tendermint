@@ -2,16 +2,17 @@ package p2p
 
 import (
 	"context"
-	"github.com/tendermint/tendermint/libs/log"
 	"strings"
 	"testing"
 	"time"
 
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 func TestPeerScoring(t *testing.T) {

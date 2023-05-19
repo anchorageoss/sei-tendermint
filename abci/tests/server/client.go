@@ -7,9 +7,9 @@ import (
 	"fmt"
 	mrand "math/rand"
 
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	"github.com/tendermint/tendermint/abci/types"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
+	abciclient "github.com/ari-anchor/sei-tendermint/abci/client"
+	"github.com/ari-anchor/sei-tendermint/abci/types"
+	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
 )
 
 func InitChain(ctx context.Context, client abciclient.Client) error {

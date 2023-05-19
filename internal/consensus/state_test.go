@@ -10,21 +10,21 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	abci "github.com/tendermint/tendermint/abci/types"
-	abcimocks "github.com/tendermint/tendermint/abci/types/mocks"
-	"github.com/tendermint/tendermint/crypto"
-	cstypes "github.com/tendermint/tendermint/internal/consensus/types"
-	"github.com/tendermint/tendermint/internal/eventbus"
-	tmpubsub "github.com/tendermint/tendermint/internal/pubsub"
-	tmquery "github.com/tendermint/tendermint/internal/pubsub/query"
-	"github.com/tendermint/tendermint/internal/test/factory"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
-	"github.com/tendermint/tendermint/libs/log"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
-	tmtime "github.com/tendermint/tendermint/libs/time"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/abci/example/kvstore"
+	abci "github.com/ari-anchor/sei-tendermint/abci/types"
+	abcimocks "github.com/ari-anchor/sei-tendermint/abci/types/mocks"
+	"github.com/ari-anchor/sei-tendermint/crypto"
+	cstypes "github.com/ari-anchor/sei-tendermint/internal/consensus/types"
+	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
+	tmpubsub "github.com/ari-anchor/sei-tendermint/internal/pubsub"
+	tmquery "github.com/ari-anchor/sei-tendermint/internal/pubsub/query"
+	"github.com/ari-anchor/sei-tendermint/internal/test/factory"
+	tmbytes "github.com/ari-anchor/sei-tendermint/libs/bytes"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
+	tmtime "github.com/ari-anchor/sei-tendermint/libs/time"
+	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 /*
@@ -1983,7 +1983,7 @@ func TestFinalizeBlockCalled(t *testing.T) {
 			}, nil)
 			m.On("PrepareProposal", mock.Anything, mock.Anything).Return(&abci.ResponsePrepareProposal{}, nil)
 			// We only expect VerifyVoteExtension to be called on non-nil precommits.
-			// https://github.com/tendermint/tendermint/issues/8487
+			// https://github.com/ari-anchor/sei-tendermint/issues/8487
 			if !testCase.voteNil {
 				m.On("ExtendVote", mock.Anything, mock.Anything).Return(&abci.ResponseExtendVote{}, nil)
 				m.On("VerifyVoteExtension", mock.Anything, mock.Anything).Return(&abci.ResponseVerifyVoteExtension{

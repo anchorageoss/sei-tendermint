@@ -6,11 +6,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/tendermint/tendermint/libs/bytes"
-	rpcclient "github.com/tendermint/tendermint/rpc/client"
-	"github.com/tendermint/tendermint/rpc/coretypes"
-	jsonrpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/libs/bytes"
+	rpcclient "github.com/ari-anchor/sei-tendermint/rpc/client"
+	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
+	jsonrpcclient "github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/client"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 /*

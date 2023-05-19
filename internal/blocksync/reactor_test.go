@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tendermint/tendermint/internal/mempool"
+	"github.com/ari-anchor/sei-tendermint/internal/mempool"
 
 	"github.com/fortytw2/leaktest"
 	"github.com/stretchr/testify/assert"
@@ -14,22 +14,22 @@ import (
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/internal/consensus"
-	"github.com/tendermint/tendermint/internal/eventbus"
-	mpmocks "github.com/tendermint/tendermint/internal/mempool/mocks"
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/internal/p2p/p2ptest"
-	"github.com/tendermint/tendermint/internal/proxy"
-	sm "github.com/tendermint/tendermint/internal/state"
-	sf "github.com/tendermint/tendermint/internal/state/test/factory"
-	"github.com/tendermint/tendermint/internal/store"
-	"github.com/tendermint/tendermint/internal/test/factory"
-	"github.com/tendermint/tendermint/libs/log"
-	bcproto "github.com/tendermint/tendermint/proto/tendermint/blocksync"
-	"github.com/tendermint/tendermint/types"
+	abciclient "github.com/ari-anchor/sei-tendermint/abci/client"
+	abci "github.com/ari-anchor/sei-tendermint/abci/types"
+	"github.com/ari-anchor/sei-tendermint/config"
+	"github.com/ari-anchor/sei-tendermint/internal/consensus"
+	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
+	mpmocks "github.com/ari-anchor/sei-tendermint/internal/mempool/mocks"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p/p2ptest"
+	"github.com/ari-anchor/sei-tendermint/internal/proxy"
+	sm "github.com/ari-anchor/sei-tendermint/internal/state"
+	sf "github.com/ari-anchor/sei-tendermint/internal/state/test/factory"
+	"github.com/ari-anchor/sei-tendermint/internal/store"
+	"github.com/ari-anchor/sei-tendermint/internal/test/factory"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	bcproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/blocksync"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 type reactorTestSuite struct {
@@ -354,49 +354,49 @@ func (m *MockBlockStore) Height() int64 {
 func TestAutoRestartIfBehind(t *testing.T) {
 	t.Parallel()
 	tests := []struct {
-		name                   string
-		blocksBehindThreshold  uint64
+		name                      string
+		blocksBehindThreshold     uint64
 		blocksBehindCheckInterval time.Duration
-		selfHeight             int64
-		maxPeerHeight          int64
-		isBlockSync        	   bool
-		restartExpected        bool
+		selfHeight                int64
+		maxPeerHeight             int64
+		isBlockSync               bool
+		restartExpected           bool
 	}{
 		{
-			name: "Should not restart if blocksBehindThreshold is 0",
-			blocksBehindThreshold: 0,
+			name:                      "Should not restart if blocksBehindThreshold is 0",
+			blocksBehindThreshold:     0,
 			blocksBehindCheckInterval: 10 * time.Millisecond,
-			selfHeight:            100,
-			maxPeerHeight:         200,
-			isBlockSync:           false,
-			restartExpected:       false,
+			selfHeight:                100,
+			maxPeerHeight:             200,
+			isBlockSync:               false,
+			restartExpected:           false,
 		},
 		{
-			name: "Should not restart if behindHeight is less than threshold",
-			blocksBehindThreshold: 50,
-			selfHeight:            100,
+			name:                      "Should not restart if behindHeight is less than threshold",
+			blocksBehindThreshold:     50,
+			selfHeight:                100,
 			blocksBehindCheckInterval: 10 * time.Millisecond,
-			maxPeerHeight:         140,
-			isBlockSync:           false,
-			restartExpected:       false,
+			maxPeerHeight:             140,
+			isBlockSync:               false,
+			restartExpected:           false,
 		},
 		{
-			name: "Should restart if behindHeight is greater than or equal to threshold",
-			blocksBehindThreshold: 50,
-			selfHeight:            100,
+			name:                      "Should restart if behindHeight is greater than or equal to threshold",
+			blocksBehindThreshold:     50,
+			selfHeight:                100,
 			blocksBehindCheckInterval: 10 * time.Millisecond,
-			maxPeerHeight:         160,
-			isBlockSync:           false,
-			restartExpected:       true,
+			maxPeerHeight:             160,
+			isBlockSync:               false,
+			restartExpected:           true,
 		},
 		{
-			name: "Should not restart if blocksync",
-			blocksBehindThreshold: 50,
-			selfHeight:            100,
+			name:                      "Should not restart if blocksync",
+			blocksBehindThreshold:     50,
+			selfHeight:                100,
 			blocksBehindCheckInterval: 10 * time.Millisecond,
-			maxPeerHeight:         160,
-			isBlockSync:           true,
-			restartExpected:       false,
+			maxPeerHeight:             160,
+			isBlockSync:               true,
+			restartExpected:           false,
 		},
 	}
 
@@ -407,21 +407,20 @@ func TestAutoRestartIfBehind(t *testing.T) {
 			mockBlockStore.On("Height").Return(tt.selfHeight)
 
 			blockPool := &BlockPool{
-				logger:       log.TestingLogger(),
-				height:       tt.selfHeight,
+				logger:        log.TestingLogger(),
+				height:        tt.selfHeight,
 				maxPeerHeight: tt.maxPeerHeight,
-
 			}
 
 			restartChan := make(chan struct{}, 1)
 			r := &Reactor{
-				logger: 				 log.TestingLogger(),
-				store:                    mockBlockStore,
-				pool:                     blockPool,
-				blocksBehindThreshold:    tt.blocksBehindThreshold,
+				logger:                    log.TestingLogger(),
+				store:                     mockBlockStore,
+				pool:                      blockPool,
+				blocksBehindThreshold:     tt.blocksBehindThreshold,
 				blocksBehindCheckInterval: tt.blocksBehindCheckInterval,
-				restartCh:                restartChan,
-				blockSync:                newAtomicBool(tt.isBlockSync),
+				restartCh:                 restartChan,
+				blockSync:                 newAtomicBool(tt.isBlockSync),
 			}
 
 			ctx, cancel := context.WithTimeout(context.Background(), 200*time.Millisecond)

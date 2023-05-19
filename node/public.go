@@ -5,12 +5,12 @@ import (
 	"context"
 	"fmt"
 
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
-	"github.com/tendermint/tendermint/privval"
-	"github.com/tendermint/tendermint/types"
+	abciclient "github.com/ari-anchor/sei-tendermint/abci/client"
+	"github.com/ari-anchor/sei-tendermint/config"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	"github.com/ari-anchor/sei-tendermint/libs/service"
+	"github.com/ari-anchor/sei-tendermint/privval"
+	"github.com/ari-anchor/sei-tendermint/types"
 	"go.opentelemetry.io/otel/sdk/trace"
 )
 

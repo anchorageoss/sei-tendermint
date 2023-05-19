@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"sync"
 
+	"github.com/ari-anchor/sei-tendermint/internal/p2p"
+	"github.com/ari-anchor/sei-tendermint/light/provider"
+	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/types"
 	"github.com/gogo/protobuf/proto"
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/light/provider"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
 )
 
 var (

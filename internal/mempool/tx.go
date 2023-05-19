@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tendermint/tendermint/internal/libs/clist"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/internal/libs/clist"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 // TxInfo are parameters that get passed when attempting to add a tx to the
@@ -72,9 +72,9 @@ func (wtx *WrappedTx) Size() int {
 // TxStore implements a thread-safe mapping of valid transaction(s).
 //
 // NOTE:
-// - Concurrent read-only access to a *WrappedTx object is OK. However, mutative
-//   access is not allowed. Regardless, it is not expected for the mempool to
-//   need mutative access.
+//   - Concurrent read-only access to a *WrappedTx object is OK. However, mutative
+//     access is not allowed. Regardless, it is not expected for the mempool to
+//     need mutative access.
 type TxStore struct {
 	mtx       sync.RWMutex
 	hashTxs   map[types.TxKey]*WrappedTx // primary index

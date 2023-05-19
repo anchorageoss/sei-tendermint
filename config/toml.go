@@ -8,8 +8,8 @@ import (
 	"strings"
 	"text/template"
 
-	tmos "github.com/tendermint/tendermint/libs/os"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
+	tmos "github.com/ari-anchor/sei-tendermint/libs/os"
+	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
 )
 
 // defaultDirPerm is the default permissions used when creating directories.
@@ -250,7 +250,7 @@ event-log-max-items = {{ .RPC.EventLogMaxItems }}
 # How long to wait for a tx to be committed during /broadcast_tx_commit.
 # WARNING: Using a value larger than 10s will result in increasing the
 # global HTTP write timeout, which applies to all connections and endpoints.
-# See https://github.com/tendermint/tendermint/issues/3435
+# See https://github.com/ari-anchor/sei-tendermint/issues/3435
 timeout-broadcast-tx-commit = "{{ .RPC.TimeoutBroadcastTxCommit }}"
 
 # Maximum size of request body, in bytes
@@ -316,7 +316,7 @@ max-incoming-connection-attempts = {{ .P2P.MaxIncomingConnectionAttempts }}
 pex = {{ .P2P.PexReactor }}
 
 # Comma separated list of peer IDs to keep private (will not be gossiped to other peers)
-# Warning: IPs will be exposed at /net_info, for more information https://github.com/tendermint/tendermint/issues/3055
+# Warning: IPs will be exposed at /net_info, for more information https://github.com/ari-anchor/sei-tendermint/issues/3055
 private-peer-ids = "{{ .P2P.PrivatePeerIDs }}"
 
 # Toggle to disable guard against peers connecting from the same ip.
@@ -353,7 +353,7 @@ unconditional-peer-ids = "{{ .P2P.UnconditionalPeerIDs }}"
 
 # recheck has been moved from a config option to a global
 # consensus param in v0.36
-# See https://github.com/tendermint/tendermint/issues/8244 for more information.
+# See https://github.com/ari-anchor/sei-tendermint/issues/8244 for more information.
 
 # Set true to broadcast transactions in the mempool to other nodes
 broadcast = {{ .Mempool.Broadcast }}
@@ -380,7 +380,7 @@ max-tx-bytes = {{ .Mempool.MaxTxBytes }}
 
 # Maximum size of a batch of transactions to send to a peer
 # Including space needed by encoding (one varint per transaction).
-# XXX: Unused due to https://github.com/tendermint/tendermint/issues/5796
+# XXX: Unused due to https://github.com/ari-anchor/sei-tendermint/issues/5796
 max-batch-bytes = {{ .Mempool.MaxBatchBytes }}
 
 # ttl-duration, if non-zero, defines the maximum amount of time a transaction
@@ -481,7 +481,7 @@ peer-query-maj23-sleep-duration = "{{ .Consensus.PeerQueryMaj23SleepDuration }}"
 #
 # These fields will be removed from the configuration file in the v0.37 release of Tendermint.
 # For additional information, see ADR-74:
-# https://github.com/tendermint/tendermint/blob/master/docs/architecture/adr-074-timeout-params.md
+# https://github.com/ari-anchor/sei-tendermint/blob/master/docs/architecture/adr-074-timeout-params.md
 
 # This field provides an unsafe override of the Propose timeout consensus parameter.
 # This field configures how long the consensus engine will wait for a proposal block before prevoting nil.

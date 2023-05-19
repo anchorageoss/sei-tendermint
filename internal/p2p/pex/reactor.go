@@ -6,13 +6,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/internal/p2p/conn"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
-	protop2p "github.com/tendermint/tendermint/proto/tendermint/p2p"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/config"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p/conn"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	"github.com/ari-anchor/sei-tendermint/libs/service"
+	protop2p "github.com/ari-anchor/sei-tendermint/proto/tendermint/p2p"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 var (
@@ -57,7 +57,7 @@ type NoPeersAvailableError struct {
 }
 
 func (e *NoPeersAvailableError) Error() string {
-    return fmt.Sprintf("no available peers to send a PEX request to (retrying)")
+	return fmt.Sprintf("no available peers to send a PEX request to (retrying)")
 }
 
 // TODO: We should decide whether we want channel descriptors to be housed
@@ -114,7 +114,7 @@ type Reactor struct {
 	channel *p2p.Channel
 
 	// Used to signal a restart the node on the application level
-	restartCh chan struct{}
+	restartCh                     chan struct{}
 	restartNoAvailablePeersWindow time.Duration
 }
 
@@ -127,14 +127,14 @@ func NewReactor(
 	selfRemediationConfig *config.SelfRemediationConfig,
 ) *Reactor {
 	r := &Reactor{
-		logger:               logger,
-		peerManager:          peerManager,
-		peerEvents:           peerEvents,
-		availablePeers:       make(map[types.NodeID]struct{}),
-		lastNoAvailablePeers: time.Time{},
-		requestsSent:         make(map[types.NodeID]struct{}),
-		lastReceivedRequests: make(map[types.NodeID]time.Time),
-		restartCh:            restartCh,
+		logger:                        logger,
+		peerManager:                   peerManager,
+		peerEvents:                    peerEvents,
+		availablePeers:                make(map[types.NodeID]struct{}),
+		lastNoAvailablePeers:          time.Time{},
+		requestsSent:                  make(map[types.NodeID]struct{}),
+		lastReceivedRequests:          make(map[types.NodeID]time.Time),
+		restartCh:                     restartCh,
 		restartNoAvailablePeersWindow: time.Duration(selfRemediationConfig.P2pNoPeersRestarWindowSeconds) * time.Second,
 	}
 

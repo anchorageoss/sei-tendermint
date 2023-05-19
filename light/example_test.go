@@ -2,18 +2,19 @@ package light_test
 
 import (
 	"context"
-	"github.com/tendermint/tendermint/light/provider"
 	"testing"
 	"time"
 
+	"github.com/ari-anchor/sei-tendermint/light/provider"
+
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/light"
-	httpp "github.com/tendermint/tendermint/light/provider/http"
-	dbs "github.com/tendermint/tendermint/light/store/db"
-	rpctest "github.com/tendermint/tendermint/rpc/test"
+	"github.com/ari-anchor/sei-tendermint/abci/example/kvstore"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	"github.com/ari-anchor/sei-tendermint/light"
+	httpp "github.com/ari-anchor/sei-tendermint/light/provider/http"
+	dbs "github.com/ari-anchor/sei-tendermint/light/store/db"
+	rpctest "github.com/ari-anchor/sei-tendermint/rpc/test"
 )
 
 // Manually getting light blocks and verifying them.

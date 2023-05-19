@@ -6,20 +6,20 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/internal/pubsub/query"
-	"github.com/tendermint/tendermint/internal/pubsub/query/syntax"
+	"github.com/ari-anchor/sei-tendermint/abci/types"
+	"github.com/ari-anchor/sei-tendermint/internal/pubsub/query"
+	"github.com/ari-anchor/sei-tendermint/internal/pubsub/query/syntax"
 )
 
 // Example events from the OpenAPI documentation:
-//  https://github.com/tendermint/tendermint/blob/master/rpc/openapi/openapi.yaml
+//
+//	https://github.com/ari-anchor/sei-tendermint/blob/master/rpc/openapi/openapi.yaml
 //
 // Redactions:
 //
 //   - Add an explicit "tm" event for the built-in attributes.
 //   - Remove Index fields (not relevant to tests).
 //   - Add explicit balance values (to use in tests).
-//
 var apiEvents = []types.Event{
 	{
 		Type: "tm",

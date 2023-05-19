@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tendermint/tendermint/libs/log"
-	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	rpctypes "github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/types"
 )
 
 // DefaultRPCTimeout is the default context timeout for calls to any RPC method
@@ -140,10 +140,10 @@ func (rf *RPCFunc) adjustParams(data []byte) (json.RawMessage, error) {
 // NewRPCFunc constructs an RPCFunc for f, which must be a function whose type
 // signature matches one of these schemes:
 //
-//     func(context.Context) error
-//     func(context.Context) (R, error)
-//     func(context.Context, *T) error
-//     func(context.Context, *T) (R, error)
+//	func(context.Context) error
+//	func(context.Context) (R, error)
+//	func(context.Context, *T) error
+//	func(context.Context, *T) (R, error)
 //
 // for an arbitrary struct type T and type R. NewRPCFunc will panic if f does
 // not have one of these forms.  A newly-constructed RPCFunc has a default

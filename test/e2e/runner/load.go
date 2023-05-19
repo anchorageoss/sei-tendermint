@@ -7,11 +7,11 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/tendermint/tendermint/libs/log"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
-	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
-	e2e "github.com/tendermint/tendermint/test/e2e/pkg"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
+	rpchttp "github.com/ari-anchor/sei-tendermint/rpc/client/http"
+	e2e "github.com/ari-anchor/sei-tendermint/test/e2e/pkg"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 // Load generates transactions against the network until the given context is

@@ -3,9 +3,9 @@ package light
 import (
 	"context"
 
-	"github.com/tendermint/tendermint/light/provider"
-	"github.com/tendermint/tendermint/light/provider/http"
-	"github.com/tendermint/tendermint/light/store"
+	"github.com/ari-anchor/sei-tendermint/light/provider"
+	"github.com/ari-anchor/sei-tendermint/light/provider/http"
+	"github.com/ari-anchor/sei-tendermint/light/store"
 )
 
 // NewHTTPClient initiates an instance of a light client using HTTP addresses

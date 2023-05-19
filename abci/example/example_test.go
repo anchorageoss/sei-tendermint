@@ -13,14 +13,14 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/tendermint/tendermint/libs/log"
-	tmnet "github.com/tendermint/tendermint/libs/net"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	tmnet "github.com/ari-anchor/sei-tendermint/libs/net"
 
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	"github.com/tendermint/tendermint/abci/example/code"
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	abciserver "github.com/tendermint/tendermint/abci/server"
-	"github.com/tendermint/tendermint/abci/types"
+	abciclient "github.com/ari-anchor/sei-tendermint/abci/client"
+	"github.com/ari-anchor/sei-tendermint/abci/example/code"
+	"github.com/ari-anchor/sei-tendermint/abci/example/kvstore"
+	abciserver "github.com/ari-anchor/sei-tendermint/abci/server"
+	"github.com/ari-anchor/sei-tendermint/abci/types"
 )
 
 func init() {

@@ -9,14 +9,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	"github.com/tendermint/tendermint/internal/eventbus"
-	tmpubsub "github.com/tendermint/tendermint/internal/pubsub"
-	"github.com/tendermint/tendermint/internal/test/factory"
-	"github.com/tendermint/tendermint/libs/log"
-	tmtimemocks "github.com/tendermint/tendermint/libs/time/mocks"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/abci/example/kvstore"
+	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
+	tmpubsub "github.com/ari-anchor/sei-tendermint/internal/pubsub"
+	"github.com/ari-anchor/sei-tendermint/internal/test/factory"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	tmtimemocks "github.com/ari-anchor/sei-tendermint/libs/time/mocks"
+	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 const (

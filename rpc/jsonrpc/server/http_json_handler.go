@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/tendermint/tendermint/libs/log"
-	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	rpctypes "github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/types"
 )
 
 // HTTP + JSON handler

@@ -7,8 +7,8 @@ import (
 
 	"github.com/google/orderedcode"
 
-	"github.com/tendermint/tendermint/internal/pubsub/query/syntax"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/internal/pubsub/query/syntax"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 func intInSlice(a int, list []int) bool {

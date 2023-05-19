@@ -7,12 +7,12 @@ import (
 	"sync"
 	"time"
 
-	clist "github.com/tendermint/tendermint/internal/libs/clist"
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	clist "github.com/ari-anchor/sei-tendermint/internal/libs/clist"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	"github.com/ari-anchor/sei-tendermint/libs/service"
+	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 var _ service.Service = (*Reactor)(nil)
@@ -182,7 +182,7 @@ func (r *Reactor) processEvidenceCh(ctx context.Context, evidenceCh *p2p.Channel
 // The peer may also receive the same piece of evidence multiple times if it
 // connects/disconnects frequently from the broadcasting peer(s).
 //
-// REF: https://github.com/tendermint/tendermint/issues/4727
+// REF: https://github.com/ari-anchor/sei-tendermint/issues/4727
 func (r *Reactor) processPeerUpdate(ctx context.Context, peerUpdate p2p.PeerUpdate, evidenceCh *p2p.Channel) {
 	r.logger.Debug("received peer update", "peer", peerUpdate.NodeID, "status", peerUpdate.Status)
 
@@ -245,7 +245,7 @@ func (r *Reactor) processPeerUpdates(ctx context.Context, peerUpdates *p2p.PeerU
 // TODO: This should be refactored so that we do not blindly gossip evidence
 // that the peer has already received or may not be ready for.
 //
-// REF: https://github.com/tendermint/tendermint/issues/4727
+// REF: https://github.com/ari-anchor/sei-tendermint/issues/4727
 func (r *Reactor) broadcastEvidenceLoop(ctx context.Context, peerID types.NodeID, evidenceCh *p2p.Channel) {
 	var next *clist.CElement
 

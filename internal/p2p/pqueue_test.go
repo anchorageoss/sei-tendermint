@@ -7,7 +7,7 @@ import (
 
 	gogotypes "github.com/gogo/protobuf/types"
 
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
 )
 
 type testMessage = gogotypes.StringValue

@@ -4,7 +4,6 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/tendermint/tendermint/libs/log"
 	"math"
 	"math/rand"
 	"sort"
@@ -12,13 +11,15 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+
 	"github.com/gogo/protobuf/proto"
 	"github.com/google/orderedcode"
 	dbm "github.com/tendermint/tm-db"
 
-	tmsync "github.com/tendermint/tendermint/internal/libs/sync"
-	p2pproto "github.com/tendermint/tendermint/proto/tendermint/p2p"
-	"github.com/tendermint/tendermint/types"
+	tmsync "github.com/ari-anchor/sei-tendermint/internal/libs/sync"
+	p2pproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/p2p"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 const (

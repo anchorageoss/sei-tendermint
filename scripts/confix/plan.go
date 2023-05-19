@@ -20,13 +20,13 @@ import (
 // into older releases.
 var plan = transform.Plan{
 	{
-		// Since https://github.com/tendermint/tendermint/pull/5777.
+		// Since https://github.com/ari-anchor/sei-tendermint/pull/5777.
 		Desc: "Rename everything from snake_case to kebab-case",
 		T:    transform.SnakeToKebab(),
 	},
 	{
-		// [fastsync]  renamed in https://github.com/tendermint/tendermint/pull/6896.
-		// [blocksync] removed in https://github.com/tendermint/tendermint/pull/7159.
+		// [fastsync]  renamed in https://github.com/ari-anchor/sei-tendermint/pull/6896.
+		// [blocksync] removed in https://github.com/ari-anchor/sei-tendermint/pull/7159.
 		Desc: "Remove [fastsync] and [blocksync] sections",
 		T: transform.Func(func(_ context.Context, doc *tomledit.Document) error {
 			doc.First("fast-sync").Remove()
@@ -37,7 +37,7 @@ var plan = transform.Plan{
 		ErrorOK: true,
 	},
 	{
-		// Since https://github.com/tendermint/tendermint/pull/6241.
+		// Since https://github.com/ari-anchor/sei-tendermint/pull/6241.
 		Desc: `Add top-level mode setting (default "full")`,
 		T: transform.EnsureKey(nil, &parser.KeyValue{
 			Block: parser.Comments{"Mode of Node: full | validator | seed"},
@@ -47,7 +47,7 @@ var plan = transform.Plan{
 		ErrorOK: true,
 	},
 	{
-		// Since https://github.com/tendermint/tendermint/pull/7121.
+		// Since https://github.com/ari-anchor/sei-tendermint/pull/7121.
 		Desc: "Remove gRPC settings from the [rpc] section",
 		T: transform.Func(func(_ context.Context, doc *tomledit.Document) error {
 			doc.First("rpc", "grpc-laddr").Remove()
@@ -56,7 +56,7 @@ var plan = transform.Plan{
 		}),
 	},
 	{
-		// Since https://github.com/tendermint/tendermint/pull/8217.
+		// Since https://github.com/ari-anchor/sei-tendermint/pull/8217.
 		Desc: "Remove per-node consensus timeouts (converted to consensus parameters)",
 		T: transform.Remove(
 			parser.Key{"consensus", "skip-timeout-commit"},
@@ -71,8 +71,8 @@ var plan = transform.Plan{
 		ErrorOK: true,
 	},
 	{
-		// Removed wal-dir: https://github.com/tendermint/tendermint/pull/6396.
-		// Removed version: https://github.com/tendermint/tendermint/pull/7171.
+		// Removed wal-dir: https://github.com/ari-anchor/sei-tendermint/pull/6396.
+		// Removed version: https://github.com/ari-anchor/sei-tendermint/pull/7171.
 		Desc: "Remove vestigial mempool.wal-dir settings",
 		T: transform.Remove(
 			parser.Key{"mempool", "wal-dir"},
@@ -81,7 +81,7 @@ var plan = transform.Plan{
 		ErrorOK: true,
 	},
 	{
-		// Since https://github.com/tendermint/tendermint/pull/6323.
+		// Since https://github.com/ari-anchor/sei-tendermint/pull/6323.
 		Desc: "Add new [p2p] queue-type setting",
 		T: transform.EnsureKey(parser.Key{"p2p"}, &parser.KeyValue{
 			Block: parser.Comments{"Select the p2p internal queue"},
@@ -91,7 +91,7 @@ var plan = transform.Plan{
 		ErrorOK: true,
 	},
 	{
-		// Since https://github.com/tendermint/tendermint/pull/6353.
+		// Since https://github.com/ari-anchor/sei-tendermint/pull/6353.
 		Desc: "Add [p2p] connection count and rate limit settings",
 		T: transform.Func(func(_ context.Context, doc *tomledit.Document) error {
 			tab := transform.FindTable(doc, "p2p")
@@ -114,9 +114,9 @@ var plan = transform.Plan{
 		}),
 	},
 	{
-		// Added "chunk-fetchers" https://github.com/tendermint/tendermint/pull/6566.
+		// Added "chunk-fetchers" https://github.com/ari-anchor/sei-tendermint/pull/6566.
 		// This value was backported into v0.34.11 (modulo casing).
-		// Renamed to "fetchers"  https://github.com/tendermint/tendermint/pull/6587.
+		// Renamed to "fetchers"  https://github.com/ari-anchor/sei-tendermint/pull/6587.
 		Desc: "Rename statesync.chunk-fetchers to statesync.fetchers",
 		T: transform.Func(func(ctx context.Context, doc *tomledit.Document) error {
 			// If the key already exists, rename it preserving its value.
@@ -136,7 +136,7 @@ var plan = transform.Plan{
 		}),
 	},
 	{
-		// Since https://github.com/tendermint/tendermint/pull/6807.
+		// Since https://github.com/ari-anchor/sei-tendermint/pull/6807.
 		// Backported into v0.34.13 (modulo casing).
 		Desc: "Add statesync.use-p2p setting",
 		T: transform.EnsureKey(parser.Key{"statesync"}, &parser.KeyValue{
@@ -150,7 +150,7 @@ var plan = transform.Plan{
 		}),
 	},
 	{
-		// Since https://github.com/tendermint/tendermint/pull/6462.
+		// Since https://github.com/ari-anchor/sei-tendermint/pull/6462.
 		Desc: "Move priv-validator settings under [priv-validator]",
 		T: transform.Func(func(_ context.Context, doc *tomledit.Document) error {
 			const pvPrefix = "priv-validator-"
@@ -195,7 +195,7 @@ var plan = transform.Plan{
 		}),
 	},
 	{
-		// Since https://github.com/tendermint/tendermint/pull/6411.
+		// Since https://github.com/ari-anchor/sei-tendermint/pull/6411.
 		Desc: "Convert tx-index.indexer from a string to a list of strings",
 		T: transform.Func(func(ctx context.Context, doc *tomledit.Document) error {
 			idx := doc.First("tx-index", "indexer")
@@ -223,13 +223,13 @@ var plan = transform.Plan{
 		}),
 	},
 	{
-		// Since https://github.com/tendermint/tendermint/pull/8514.
+		// Since https://github.com/ari-anchor/sei-tendermint/pull/8514.
 		Desc:    "Remove the recheck option from the [mempool] section",
 		T:       transform.Remove(parser.Key{"mempool", "recheck"}),
 		ErrorOK: true,
 	},
 	{
-		// Since https://github.com/tendermint/tendermint/pull/8654.
+		// Since https://github.com/ari-anchor/sei-tendermint/pull/8654.
 		Desc:    "Remove the seeds option from the [p2p] section",
 		T:       transform.Remove(parser.Key{"p2p", "seeds"}),
 		ErrorOK: true,

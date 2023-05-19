@@ -3,8 +3,8 @@ package crypto
 import (
 	"crypto/sha256"
 
-	"github.com/tendermint/tendermint/internal/jsontypes"
-	"github.com/tendermint/tendermint/libs/bytes"
+	"github.com/ari-anchor/sei-tendermint/internal/jsontypes"
+	"github.com/ari-anchor/sei-tendermint/libs/bytes"
 )
 
 const (
@@ -64,7 +64,7 @@ type Symmetric interface {
 }
 
 // If a new key type implements batch verification,
-// the key type must be registered in github.com/tendermint/tendermint/crypto/batch
+// the key type must be registered in github.com/ari-anchor/sei-tendermint/crypto/batch
 type BatchVerifier interface {
 	// Add appends an entry into the BatchVerifier.
 	Add(key PubKey, message, signature []byte) error

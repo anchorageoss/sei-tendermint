@@ -12,8 +12,8 @@ import (
 	"path/filepath"
 	"testing"
 
+	metricsgen "github.com/ari-anchor/sei-tendermint/scripts/metricsgen"
 	"github.com/stretchr/testify/require"
-	metricsgen "github.com/tendermint/tendermint/scripts/metricsgen"
 )
 
 const testDataDir = "./testdata"

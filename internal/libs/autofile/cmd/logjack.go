@@ -12,8 +12,8 @@ import (
 	"strings"
 	"syscall"
 
-	auto "github.com/tendermint/tendermint/internal/libs/autofile"
-	"github.com/tendermint/tendermint/libs/log"
+	auto "github.com/ari-anchor/sei-tendermint/internal/libs/autofile"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
 )
 
 const Version = "0.0.1"

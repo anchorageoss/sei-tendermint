@@ -18,11 +18,11 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/tendermint/tendermint/internal/rpc/core"
-	"github.com/tendermint/tendermint/libs/bytes"
-	"github.com/tendermint/tendermint/rpc/client"
-	"github.com/tendermint/tendermint/rpc/coretypes"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ari-anchor/sei-tendermint/internal/rpc/core"
+	"github.com/ari-anchor/sei-tendermint/libs/bytes"
+	"github.com/ari-anchor/sei-tendermint/rpc/client"
+	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 // Client wraps arbitrary implementations of the various interfaces.
@@ -41,7 +41,6 @@ var _ client.Client = Client{}
 
 // Call is used by recorders to save a call and response.
 // It can also be used to configure mock responses.
-//
 type Call struct {
 	Name     string
 	Args     interface{}

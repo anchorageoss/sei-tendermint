@@ -3,8 +3,8 @@ package factory
 import (
 	"time"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/types"
+	cfg "github.com/ari-anchor/sei-tendermint/config"
+	"github.com/ari-anchor/sei-tendermint/types"
 )
 
 func GenesisDoc(

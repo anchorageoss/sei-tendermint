@@ -15,24 +15,24 @@ import (
 	"go.opentelemetry.io/otel/sdk/trace"
 	"google.golang.org/grpc"
 
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	"github.com/tendermint/tendermint/abci/server"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/libs/log"
-	tmnet "github.com/tendermint/tendermint/libs/net"
-	"github.com/tendermint/tendermint/light"
-	lproxy "github.com/tendermint/tendermint/light/proxy"
-	lrpc "github.com/tendermint/tendermint/light/rpc"
-	dbs "github.com/tendermint/tendermint/light/store/db"
-	"github.com/tendermint/tendermint/node"
-	"github.com/tendermint/tendermint/privval"
-	grpcprivval "github.com/tendermint/tendermint/privval/grpc"
-	privvalproto "github.com/tendermint/tendermint/proto/tendermint/privval"
-	rpcserver "github.com/tendermint/tendermint/rpc/jsonrpc/server"
-	"github.com/tendermint/tendermint/test/e2e/app"
-	e2e "github.com/tendermint/tendermint/test/e2e/pkg"
+	abciclient "github.com/ari-anchor/sei-tendermint/abci/client"
+	"github.com/ari-anchor/sei-tendermint/abci/server"
+	"github.com/ari-anchor/sei-tendermint/config"
+	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
+	"github.com/ari-anchor/sei-tendermint/internal/p2p"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
+	tmnet "github.com/ari-anchor/sei-tendermint/libs/net"
+	"github.com/ari-anchor/sei-tendermint/light"
+	lproxy "github.com/ari-anchor/sei-tendermint/light/proxy"
+	lrpc "github.com/ari-anchor/sei-tendermint/light/rpc"
+	dbs "github.com/ari-anchor/sei-tendermint/light/store/db"
+	"github.com/ari-anchor/sei-tendermint/node"
+	"github.com/ari-anchor/sei-tendermint/privval"
+	grpcprivval "github.com/ari-anchor/sei-tendermint/privval/grpc"
+	privvalproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/privval"
+	rpcserver "github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/server"
+	"github.com/ari-anchor/sei-tendermint/test/e2e/app"
+	e2e "github.com/ari-anchor/sei-tendermint/test/e2e/pkg"
 )
 
 // main is the binary entrypoint.
@@ -214,7 +214,7 @@ func startLightNode(ctx context.Context, logger log.Logger, cfg *Config) error {
 	rpccfg.MaxOpenConnections = tmcfg.RPC.MaxOpenConnections
 	// If necessary adjust global WriteTimeout to ensure it's greater than
 	// TimeoutBroadcastTxCommit.
-	// See https://github.com/tendermint/tendermint/issues/3435
+	// See https://github.com/ari-anchor/sei-tendermint/issues/3435
 	// Note we don't need to adjust anything if the timeout is already unlimited.
 	if rpccfg.WriteTimeout > 0 && rpccfg.WriteTimeout <= tmcfg.RPC.TimeoutBroadcastTxCommit {
 		rpccfg.WriteTimeout = tmcfg.RPC.TimeoutBroadcastTxCommit + 1*time.Second

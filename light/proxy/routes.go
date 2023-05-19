@@ -3,9 +3,9 @@ package proxy
 import (
 	"context"
 
-	lrpc "github.com/tendermint/tendermint/light/rpc"
-	rpcclient "github.com/tendermint/tendermint/rpc/client"
-	"github.com/tendermint/tendermint/rpc/coretypes"
+	lrpc "github.com/ari-anchor/sei-tendermint/light/rpc"
+	rpcclient "github.com/ari-anchor/sei-tendermint/rpc/client"
+	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
 )
 
 // proxyService wraps a light RPC client to export the RPC service interfaces.

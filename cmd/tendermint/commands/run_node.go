@@ -4,14 +4,15 @@ import (
 	"bytes"
 	"crypto/sha256"
 	"fmt"
-	"github.com/spf13/cobra"
 	"io"
 	"os"
 	"os/signal"
 	"syscall"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/spf13/cobra"
+
+	cfg "github.com/ari-anchor/sei-tendermint/config"
+	"github.com/ari-anchor/sei-tendermint/libs/log"
 )
 
 var (
