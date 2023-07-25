@@ -1,8 +1,8 @@
 package sr25519
 
 import (
-	"github.com/ari-anchor/sei-tendermint/internal/jsontypes"
-	tmjson "github.com/ari-anchor/sei-tendermint/libs/json"
+	"github.com/anchorageoss/sei-tendermint/internal/jsontypes"
+	tmjson "github.com/anchorageoss/sei-tendermint/libs/json"
 )
 
 const (

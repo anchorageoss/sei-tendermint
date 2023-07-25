@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/sr25519"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/sr25519"
 )
 
 func TestSignAndValidateSr25519(t *testing.T) {

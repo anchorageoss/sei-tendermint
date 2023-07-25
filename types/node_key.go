@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
-	"github.com/ari-anchor/sei-tendermint/internal/jsontypes"
-	tmos "github.com/ari-anchor/sei-tendermint/libs/os"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/ed25519"
+	"github.com/anchorageoss/sei-tendermint/internal/jsontypes"
+	tmos "github.com/anchorageoss/sei-tendermint/libs/os"
 )
 
 //------------------------------------------------------------------------------

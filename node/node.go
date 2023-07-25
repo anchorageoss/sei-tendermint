@@ -14,31 +14,31 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"go.opentelemetry.io/otel/sdk/trace"
 
-	abciclient "github.com/ari-anchor/sei-tendermint/abci/client"
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/internal/blocksync"
-	"github.com/ari-anchor/sei-tendermint/internal/consensus"
-	"github.com/ari-anchor/sei-tendermint/internal/dbsync"
-	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
-	"github.com/ari-anchor/sei-tendermint/internal/eventlog"
-	"github.com/ari-anchor/sei-tendermint/internal/evidence"
-	"github.com/ari-anchor/sei-tendermint/internal/mempool"
-	"github.com/ari-anchor/sei-tendermint/internal/p2p"
-	"github.com/ari-anchor/sei-tendermint/internal/p2p/pex"
-	"github.com/ari-anchor/sei-tendermint/internal/proxy"
-	rpccore "github.com/ari-anchor/sei-tendermint/internal/rpc/core"
-	sm "github.com/ari-anchor/sei-tendermint/internal/state"
-	"github.com/ari-anchor/sei-tendermint/internal/state/indexer"
-	"github.com/ari-anchor/sei-tendermint/internal/state/indexer/sink"
-	"github.com/ari-anchor/sei-tendermint/internal/statesync"
-	"github.com/ari-anchor/sei-tendermint/internal/store"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/libs/service"
-	tmtime "github.com/ari-anchor/sei-tendermint/libs/time"
-	"github.com/ari-anchor/sei-tendermint/privval"
-	"github.com/ari-anchor/sei-tendermint/types"
+	abciclient "github.com/anchorageoss/sei-tendermint/abci/client"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/internal/blocksync"
+	"github.com/anchorageoss/sei-tendermint/internal/consensus"
+	"github.com/anchorageoss/sei-tendermint/internal/dbsync"
+	"github.com/anchorageoss/sei-tendermint/internal/eventbus"
+	"github.com/anchorageoss/sei-tendermint/internal/eventlog"
+	"github.com/anchorageoss/sei-tendermint/internal/evidence"
+	"github.com/anchorageoss/sei-tendermint/internal/mempool"
+	"github.com/anchorageoss/sei-tendermint/internal/p2p"
+	"github.com/anchorageoss/sei-tendermint/internal/p2p/pex"
+	"github.com/anchorageoss/sei-tendermint/internal/proxy"
+	rpccore "github.com/anchorageoss/sei-tendermint/internal/rpc/core"
+	sm "github.com/anchorageoss/sei-tendermint/internal/state"
+	"github.com/anchorageoss/sei-tendermint/internal/state/indexer"
+	"github.com/anchorageoss/sei-tendermint/internal/state/indexer/sink"
+	"github.com/anchorageoss/sei-tendermint/internal/statesync"
+	"github.com/anchorageoss/sei-tendermint/internal/store"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
+	tmtime "github.com/anchorageoss/sei-tendermint/libs/time"
+	"github.com/anchorageoss/sei-tendermint/privval"
+	"github.com/anchorageoss/sei-tendermint/types"
 
 	_ "net/http/pprof" // nolint: gosec // securely exposed on separate, optional port
 
@@ -415,7 +415,7 @@ func makeNode(
 	// Set up state sync reactor, and schedule a sync if requested.
 	// FIXME The way we do phased startups (e.g. replay -> block sync -> consensus) is very messy,
 	// we should clean this whole thing up. See:
-	// https://github.com/ari-anchor/sei-tendermint/issues/4644
+	// https://github.com/anchorageoss/sei-tendermint/issues/4644
 	ssReactor := statesync.NewReactor(
 		genDoc.ChainID,
 		genDoc.InitialHeight,

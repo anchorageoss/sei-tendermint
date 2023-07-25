@@ -6,15 +6,15 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
-	"github.com/ari-anchor/sei-tendermint/internal/pubsub"
-	"github.com/ari-anchor/sei-tendermint/internal/pubsub/query"
-	rpccore "github.com/ari-anchor/sei-tendermint/internal/rpc/core"
-	"github.com/ari-anchor/sei-tendermint/libs/bytes"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	rpcclient "github.com/ari-anchor/sei-tendermint/rpc/client"
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/internal/eventbus"
+	"github.com/anchorageoss/sei-tendermint/internal/pubsub"
+	"github.com/anchorageoss/sei-tendermint/internal/pubsub/query"
+	rpccore "github.com/anchorageoss/sei-tendermint/internal/rpc/core"
+	"github.com/anchorageoss/sei-tendermint/libs/bytes"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	rpcclient "github.com/anchorageoss/sei-tendermint/rpc/client"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 /*

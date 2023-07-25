@@ -5,8 +5,8 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/libs/service"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
 )
 
 // ServiceProvider takes a config and a logger and returns a ready to go Node.

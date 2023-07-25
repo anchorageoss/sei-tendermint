@@ -6,9 +6,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/ed25519"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
 )
 
 // PrivValidatorType defines the implemtation types.

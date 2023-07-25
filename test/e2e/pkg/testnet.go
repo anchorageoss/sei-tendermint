@@ -13,11 +13,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
-	"github.com/ari-anchor/sei-tendermint/crypto/secp256k1"
-	rpchttp "github.com/ari-anchor/sei-tendermint/rpc/client/http"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/ed25519"
+	"github.com/anchorageoss/sei-tendermint/crypto/secp256k1"
+	rpchttp "github.com/anchorageoss/sei-tendermint/rpc/client/http"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 const (

@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
 )
 
 // NetInfo returns network info.

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // ErrOldHeaderExpired means the old (trusted) header has expired according to

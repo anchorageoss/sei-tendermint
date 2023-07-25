@@ -11,15 +11,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
 
 	"github.com/gogo/protobuf/proto"
 	"github.com/google/orderedcode"
 	dbm "github.com/tendermint/tm-db"
 
-	tmsync "github.com/ari-anchor/sei-tendermint/internal/libs/sync"
-	p2pproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/p2p"
-	"github.com/ari-anchor/sei-tendermint/types"
+	tmsync "github.com/anchorageoss/sei-tendermint/internal/libs/sync"
+	p2pproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/p2p"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 const (

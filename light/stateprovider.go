@@ -12,16 +12,16 @@ import (
 	"github.com/gogo/protobuf/proto"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/ari-anchor/sei-tendermint/internal/p2p"
-	sm "github.com/ari-anchor/sei-tendermint/internal/state"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	lightprovider "github.com/ari-anchor/sei-tendermint/light/provider"
-	lighthttp "github.com/ari-anchor/sei-tendermint/light/provider/http"
-	lightrpc "github.com/ari-anchor/sei-tendermint/light/rpc"
-	lightdb "github.com/ari-anchor/sei-tendermint/light/store/db"
-	rpchttp "github.com/ari-anchor/sei-tendermint/rpc/client/http"
-	"github.com/ari-anchor/sei-tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/version"
+	"github.com/anchorageoss/sei-tendermint/internal/p2p"
+	sm "github.com/anchorageoss/sei-tendermint/internal/state"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	lightprovider "github.com/anchorageoss/sei-tendermint/light/provider"
+	lighthttp "github.com/anchorageoss/sei-tendermint/light/provider/http"
+	lightrpc "github.com/anchorageoss/sei-tendermint/light/rpc"
+	lightdb "github.com/anchorageoss/sei-tendermint/light/store/db"
+	rpchttp "github.com/anchorageoss/sei-tendermint/rpc/client/http"
+	"github.com/anchorageoss/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/version"
 )
 
 const (

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/ari-anchor/sei-tendermint/abci/types"
-	tmnet "github.com/ari-anchor/sei-tendermint/libs/net"
+	"github.com/anchorageoss/sei-tendermint/abci/types"
+	tmnet "github.com/anchorageoss/sei-tendermint/libs/net"
 )
 
 func main() {

@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/ari-anchor/sei-tendermint/internal/p2p"
-	"github.com/ari-anchor/sei-tendermint/light/provider"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/internal/p2p"
+	"github.com/anchorageoss/sei-tendermint/light/provider"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 	"github.com/gogo/protobuf/proto"
 )
 

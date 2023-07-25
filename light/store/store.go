@@ -1,6 +1,6 @@
 package store
 
-import "github.com/ari-anchor/sei-tendermint/types"
+import "github.com/anchorageoss/sei-tendermint/types"
 
 // Store is anything that can persistently store headers.
 type Store interface {

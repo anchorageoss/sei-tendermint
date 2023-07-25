@@ -1,8 +1,8 @@
 package blocksync
 
 import (
-	bcproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/blocksync"
-	"github.com/ari-anchor/sei-tendermint/types"
+	bcproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/blocksync"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 const (

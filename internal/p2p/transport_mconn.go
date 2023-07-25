@@ -12,12 +12,12 @@ import (
 
 	"golang.org/x/net/netutil"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/internal/libs/protoio"
-	"github.com/ari-anchor/sei-tendermint/internal/p2p/conn"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	p2pproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/p2p"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/protoio"
+	"github.com/anchorageoss/sei-tendermint/internal/p2p/conn"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	p2pproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/p2p"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 const (

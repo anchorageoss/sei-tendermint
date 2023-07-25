@@ -9,9 +9,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	abciclient "github.com/ari-anchor/sei-tendermint/abci/client"
-	"github.com/ari-anchor/sei-tendermint/abci/example/kvstore"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
+	abciclient "github.com/anchorageoss/sei-tendermint/abci/client"
+	"github.com/anchorageoss/sei-tendermint/abci/example/kvstore"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
 )
 
 func BenchmarkTxMempool_CheckTx(b *testing.B) {

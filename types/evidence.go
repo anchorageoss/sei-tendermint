@@ -11,13 +11,13 @@ import (
 	"strings"
 	"time"
 
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/merkle"
-	"github.com/ari-anchor/sei-tendermint/internal/jsontypes"
-	tmmath "github.com/ari-anchor/sei-tendermint/libs/math"
-	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/merkle"
+	"github.com/anchorageoss/sei-tendermint/internal/jsontypes"
+	tmmath "github.com/anchorageoss/sei-tendermint/libs/math"
+	tmrand "github.com/anchorageoss/sei-tendermint/libs/rand"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
 )
 
 // Evidence represents any provable malicious activity by a validator.

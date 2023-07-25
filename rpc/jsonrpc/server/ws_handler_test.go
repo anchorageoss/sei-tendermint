@@ -11,8 +11,8 @@ import (
 	"github.com/gorilla/websocket"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	rpctypes "github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/types"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	rpctypes "github.com/anchorageoss/sei-tendermint/rpc/jsonrpc/types"
 )
 
 func TestWebsocketManagerHandler(t *testing.T) {

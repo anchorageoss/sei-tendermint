@@ -10,16 +10,16 @@ import (
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
-	"github.com/ari-anchor/sei-tendermint/internal/evidence"
-	"github.com/ari-anchor/sei-tendermint/internal/evidence/mocks"
-	sm "github.com/ari-anchor/sei-tendermint/internal/state"
-	smmocks "github.com/ari-anchor/sei-tendermint/internal/state/mocks"
-	"github.com/ari-anchor/sei-tendermint/internal/test/factory"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/internal/eventbus"
+	"github.com/anchorageoss/sei-tendermint/internal/evidence"
+	"github.com/anchorageoss/sei-tendermint/internal/evidence/mocks"
+	sm "github.com/anchorageoss/sei-tendermint/internal/state"
+	smmocks "github.com/anchorageoss/sei-tendermint/internal/state/mocks"
+	"github.com/anchorageoss/sei-tendermint/internal/test/factory"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 const (

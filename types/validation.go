@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/batch"
-	tmmath "github.com/ari-anchor/sei-tendermint/libs/math"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/batch"
+	tmmath "github.com/anchorageoss/sei-tendermint/libs/math"
 )
 
 const batchVerifyThreshold = 2

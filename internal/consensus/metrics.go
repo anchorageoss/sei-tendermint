@@ -6,9 +6,9 @@ import (
 
 	"github.com/go-kit/kit/metrics"
 
-	cstypes "github.com/ari-anchor/sei-tendermint/internal/consensus/types"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/types"
+	cstypes "github.com/anchorageoss/sei-tendermint/internal/consensus/types"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 const (

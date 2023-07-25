@@ -8,15 +8,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
 
 	"github.com/fortytw2/leaktest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/ari-anchor/sei-tendermint/internal/p2p"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/internal/p2p"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // FIXME: We should probably have some randomized property-based tests for the

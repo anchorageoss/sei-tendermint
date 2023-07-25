@@ -9,8 +9,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	rpcserver "github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/server"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	rpcserver "github.com/anchorageoss/sei-tendermint/rpc/jsonrpc/server"
 )
 
 var routes = map[string]*rpcserver.RPCFunc{

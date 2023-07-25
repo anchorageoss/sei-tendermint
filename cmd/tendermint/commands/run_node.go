@@ -11,8 +11,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	cfg "github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
+	cfg "github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
 )
 
 var (

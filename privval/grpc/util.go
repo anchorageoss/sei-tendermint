@@ -15,9 +15,9 @@ import (
 
 	"google.golang.org/grpc/keepalive"
 
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	tmnet "github.com/ari-anchor/sei-tendermint/libs/net"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	tmnet "github.com/anchorageoss/sei-tendermint/libs/net"
 )
 
 // DefaultDialOptions constructs a list of grpc dial options

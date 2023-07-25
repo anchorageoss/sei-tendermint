@@ -9,9 +9,9 @@ import (
 	"log"
 	"testing"
 
-	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
-	"github.com/ari-anchor/sei-tendermint/internal/libs/async"
-	sc "github.com/ari-anchor/sei-tendermint/internal/p2p/conn"
+	"github.com/anchorageoss/sei-tendermint/crypto/ed25519"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/async"
+	sc "github.com/anchorageoss/sei-tendermint/internal/p2p/conn"
 )
 
 func FuzzP2PSecretConnection(f *testing.F) {

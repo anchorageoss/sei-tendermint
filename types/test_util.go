@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
 )
 
 func makeExtCommit(ctx context.Context, blockID BlockID, height int64, round int32,

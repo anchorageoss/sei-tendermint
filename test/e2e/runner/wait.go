@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	e2e "github.com/ari-anchor/sei-tendermint/test/e2e/pkg"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	e2e "github.com/anchorageoss/sei-tendermint/test/e2e/pkg"
 )
 
 // Wait waits for a number of blocks to be produced, and for all nodes to catch

@@ -13,14 +13,14 @@ import (
 	dbm "github.com/tendermint/tm-db"
 	"go.opentelemetry.io/otel/sdk/trace"
 
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
-	"github.com/ari-anchor/sei-tendermint/internal/proxy"
-	tmpubsub "github.com/ari-anchor/sei-tendermint/internal/pubsub"
-	sm "github.com/ari-anchor/sei-tendermint/internal/state"
-	"github.com/ari-anchor/sei-tendermint/internal/store"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/internal/eventbus"
+	"github.com/anchorageoss/sei-tendermint/internal/proxy"
+	tmpubsub "github.com/anchorageoss/sei-tendermint/internal/pubsub"
+	sm "github.com/anchorageoss/sei-tendermint/internal/state"
+	"github.com/anchorageoss/sei-tendermint/internal/store"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 const (

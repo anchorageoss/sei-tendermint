@@ -8,9 +8,9 @@ import (
 	"github.com/google/orderedcode"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/ari-anchor/sei-tendermint/light/store"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/light/store"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // key prefixes

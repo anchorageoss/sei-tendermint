@@ -17,12 +17,12 @@ import (
 
 	"github.com/BurntSushi/toml"
 
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/privval"
-	e2e "github.com/ari-anchor/sei-tendermint/test/e2e/pkg"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/crypto/ed25519"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/privval"
+	e2e "github.com/anchorageoss/sei-tendermint/test/e2e/pkg"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 const (

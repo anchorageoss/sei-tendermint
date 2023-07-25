@@ -14,8 +14,8 @@ import (
 
 	"golang.org/x/net/netutil"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	rpctypes "github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/types"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	rpctypes "github.com/anchorageoss/sei-tendermint/rpc/jsonrpc/types"
 )
 
 // Config is a RPC server configuration.

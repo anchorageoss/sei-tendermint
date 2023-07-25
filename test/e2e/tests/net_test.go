@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	e2e "github.com/ari-anchor/sei-tendermint/test/e2e/pkg"
+	e2e "github.com/anchorageoss/sei-tendermint/test/e2e/pkg"
 )
 
 // Tests that all nodes have peered with each other, regardless of discovery method.

@@ -12,9 +12,9 @@ import (
 	secp256k1 "github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcec/v2/ecdsa"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/internal/jsontypes"
-	tmjson "github.com/ari-anchor/sei-tendermint/libs/json"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/internal/jsontypes"
+	tmjson "github.com/anchorageoss/sei-tendermint/libs/json"
 
 	// necessary for Bitcoin address format
 	"golang.org/x/crypto/ripemd160" //nolint:staticcheck

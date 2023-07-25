@@ -7,13 +7,13 @@ import (
 	"sync"
 	"time"
 
-	cstypes "github.com/ari-anchor/sei-tendermint/internal/consensus/types"
-	"github.com/ari-anchor/sei-tendermint/libs/bits"
-	tmjson "github.com/ari-anchor/sei-tendermint/libs/json"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	tmtime "github.com/ari-anchor/sei-tendermint/libs/time"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/types"
+	cstypes "github.com/anchorageoss/sei-tendermint/internal/consensus/types"
+	"github.com/anchorageoss/sei-tendermint/libs/bits"
+	tmjson "github.com/anchorageoss/sei-tendermint/libs/json"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	tmtime "github.com/anchorageoss/sei-tendermint/libs/time"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 var (
@@ -382,7 +382,7 @@ func (ps *PeerState) setHasVote(height int64, round int32, voteType tmproto.Sign
 	psVotes := ps.getVoteBitArray(height, round, voteType)
 	if psVotes != nil {
 		if ok := psVotes.SetIndex(int(index), true); !ok {
-			// https://github.com/ari-anchor/sei-tendermint/issues/2871
+			// https://github.com/anchorageoss/sei-tendermint/issues/2871
 			return ErrPeerStateInvalidVoteIndex
 		}
 	}

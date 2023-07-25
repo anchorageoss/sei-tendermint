@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	e2e "github.com/ari-anchor/sei-tendermint/test/e2e/pkg"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	e2e "github.com/anchorageoss/sei-tendermint/test/e2e/pkg"
 )
 
 // Cleanup removes the Docker Compose containers and testnet directory.

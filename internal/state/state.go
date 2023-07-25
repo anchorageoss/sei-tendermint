@@ -9,12 +9,12 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	tmtime "github.com/ari-anchor/sei-tendermint/libs/time"
+	tmtime "github.com/anchorageoss/sei-tendermint/libs/time"
 
-	tmstate "github.com/ari-anchor/sei-tendermint/proto/tendermint/state"
-	tmversion "github.com/ari-anchor/sei-tendermint/proto/tendermint/version"
-	"github.com/ari-anchor/sei-tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/version"
+	tmstate "github.com/anchorageoss/sei-tendermint/proto/tendermint/state"
+	tmversion "github.com/anchorageoss/sei-tendermint/proto/tendermint/version"
+	"github.com/anchorageoss/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/version"
 )
 
 //-----------------------------------------------------------------------------

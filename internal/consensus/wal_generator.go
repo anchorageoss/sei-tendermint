@@ -14,16 +14,16 @@ import (
 	dbm "github.com/tendermint/tm-db"
 	"go.opentelemetry.io/otel/sdk/trace"
 
-	abciclient "github.com/ari-anchor/sei-tendermint/abci/client"
-	"github.com/ari-anchor/sei-tendermint/abci/example/kvstore"
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
-	"github.com/ari-anchor/sei-tendermint/internal/proxy"
-	sm "github.com/ari-anchor/sei-tendermint/internal/state"
-	"github.com/ari-anchor/sei-tendermint/internal/store"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/privval"
-	"github.com/ari-anchor/sei-tendermint/types"
+	abciclient "github.com/anchorageoss/sei-tendermint/abci/client"
+	"github.com/anchorageoss/sei-tendermint/abci/example/kvstore"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/internal/eventbus"
+	"github.com/anchorageoss/sei-tendermint/internal/proxy"
+	sm "github.com/anchorageoss/sei-tendermint/internal/state"
+	"github.com/anchorageoss/sei-tendermint/internal/store"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/privval"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // WALGenerateNBlocks generates a consensus WAL. It does this by

@@ -5,8 +5,8 @@ package types
 
 import (
 	fmt "fmt"
-	crypto "github.com/ari-anchor/sei-tendermint/proto/tendermint/crypto"
-	version "github.com/ari-anchor/sei-tendermint/proto/tendermint/version"
+	crypto "github.com/anchorageoss/sei-tendermint/proto/tendermint/crypto"
+	version "github.com/anchorageoss/sei-tendermint/proto/tendermint/version"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	_ "github.com/gogo/protobuf/types"

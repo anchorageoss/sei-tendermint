@@ -10,14 +10,14 @@ import (
 	"reflect"
 	"time"
 
-	abciclient "github.com/ari-anchor/sei-tendermint/abci/client"
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/crypto/merkle"
-	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
-	"github.com/ari-anchor/sei-tendermint/internal/proxy"
-	sm "github.com/ari-anchor/sei-tendermint/internal/state"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/types"
+	abciclient "github.com/anchorageoss/sei-tendermint/abci/client"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/crypto/merkle"
+	"github.com/anchorageoss/sei-tendermint/internal/eventbus"
+	"github.com/anchorageoss/sei-tendermint/internal/proxy"
+	sm "github.com/anchorageoss/sei-tendermint/internal/state"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 var crc32c = crc32.MakeTable(crc32.Castagnoli)

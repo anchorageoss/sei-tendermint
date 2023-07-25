@@ -9,13 +9,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ari-anchor/sei-tendermint/abci/example/kvstore"
-	"github.com/ari-anchor/sei-tendermint/light/provider"
-	lighthttp "github.com/ari-anchor/sei-tendermint/light/provider/http"
-	rpcclient "github.com/ari-anchor/sei-tendermint/rpc/client"
-	rpchttp "github.com/ari-anchor/sei-tendermint/rpc/client/http"
-	rpctest "github.com/ari-anchor/sei-tendermint/rpc/test"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/abci/example/kvstore"
+	"github.com/anchorageoss/sei-tendermint/light/provider"
+	lighthttp "github.com/anchorageoss/sei-tendermint/light/provider/http"
+	rpcclient "github.com/anchorageoss/sei-tendermint/rpc/client"
+	rpchttp "github.com/anchorageoss/sei-tendermint/rpc/client/http"
+	rpctest "github.com/anchorageoss/sei-tendermint/rpc/test"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 func TestNewProvider(t *testing.T) {

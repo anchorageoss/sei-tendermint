@@ -11,9 +11,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	pbcrypto "github.com/ari-anchor/sei-tendermint/proto/tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/types"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	pbcrypto "github.com/anchorageoss/sei-tendermint/proto/tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 func TestStatusIndexer(t *testing.T) {
@@ -42,7 +42,7 @@ func TestStatusIndexer(t *testing.T) {
 	}
 }
 
-// A regression test for https://github.com/ari-anchor/sei-tendermint/issues/8583.
+// A regression test for https://github.com/anchorageoss/sei-tendermint/issues/8583.
 func TestResultBlockResults_regression8583(t *testing.T) {
 	const keyData = "0123456789abcdef0123456789abcdef" // 32 bytes
 	wantKey := base64.StdEncoding.EncodeToString([]byte(keyData))

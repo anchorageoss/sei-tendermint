@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	tmbytes "github.com/ari-anchor/sei-tendermint/libs/bytes"
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
-	"github.com/ari-anchor/sei-tendermint/types"
+	tmbytes "github.com/anchorageoss/sei-tendermint/libs/bytes"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // Status returns Tendermint status including node info, pubkey, latest block

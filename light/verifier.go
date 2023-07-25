@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	tmmath "github.com/ari-anchor/sei-tendermint/libs/math"
-	"github.com/ari-anchor/sei-tendermint/types"
+	tmmath "github.com/anchorageoss/sei-tendermint/libs/math"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 var (

@@ -6,8 +6,8 @@ package state
 import (
 	fmt "fmt"
 	types "github.com/anchorageoss/sei-tendermint/abci/types"
-	types1 "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	version "github.com/ari-anchor/sei-tendermint/proto/tendermint/version"
+	types1 "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	version "github.com/anchorageoss/sei-tendermint/proto/tendermint/version"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	_ "github.com/gogo/protobuf/types"

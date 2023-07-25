@@ -11,10 +11,10 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/internal/pubsub/query"
-	"github.com/ari-anchor/sei-tendermint/internal/state/indexer"
-	"github.com/ari-anchor/sei-tendermint/types"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/internal/pubsub/query"
+	"github.com/anchorageoss/sei-tendermint/internal/state/indexer"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 const (

@@ -7,13 +7,13 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
-	tmtime "github.com/ari-anchor/sei-tendermint/libs/time"
-	provider_mocks "github.com/ari-anchor/sei-tendermint/light/provider/mocks"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/version"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/ed25519"
+	tmtime "github.com/anchorageoss/sei-tendermint/libs/time"
+	provider_mocks "github.com/anchorageoss/sei-tendermint/light/provider/mocks"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/version"
 )
 
 // privKeys is a helper type for testing.

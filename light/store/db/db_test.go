@@ -10,11 +10,11 @@ import (
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/internal/test/factory"
-	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
-	"github.com/ari-anchor/sei-tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/version"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/internal/test/factory"
+	tmrand "github.com/anchorageoss/sei-tendermint/libs/rand"
+	"github.com/anchorageoss/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/version"
 )
 
 func TestLast_FirstLightBlockHeight(t *testing.T) {

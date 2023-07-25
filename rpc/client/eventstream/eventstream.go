@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
 )
 
 // Client is the subset of the RPC client interface consumed by Stream.

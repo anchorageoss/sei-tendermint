@@ -11,7 +11,7 @@ import (
 	"syscall"
 	"time"
 
-	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
+	tmrand "github.com/anchorageoss/sei-tendermint/libs/rand"
 )
 
 /* AutoFile usage

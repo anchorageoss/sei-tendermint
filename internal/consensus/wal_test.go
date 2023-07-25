@@ -13,12 +13,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ari-anchor/sei-tendermint/crypto/merkle"
-	"github.com/ari-anchor/sei-tendermint/internal/consensus/types"
-	"github.com/ari-anchor/sei-tendermint/internal/libs/autofile"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	tmtime "github.com/ari-anchor/sei-tendermint/libs/time"
-	tmtypes "github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/crypto/merkle"
+	"github.com/anchorageoss/sei-tendermint/internal/consensus/types"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/autofile"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	tmtime "github.com/anchorageoss/sei-tendermint/libs/time"
+	tmtypes "github.com/anchorageoss/sei-tendermint/types"
 )
 
 const walTestFlushInterval = 100 * time.Millisecond

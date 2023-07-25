@@ -4,8 +4,8 @@ import (
 	"context"
 	mrand "math/rand"
 
-	"github.com/ari-anchor/sei-tendermint/abci/types"
-	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
+	"github.com/anchorageoss/sei-tendermint/abci/types"
+	tmrand "github.com/anchorageoss/sei-tendermint/libs/rand"
 )
 
 // RandVal creates one random validator, with a key derived

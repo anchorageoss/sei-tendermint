@@ -8,16 +8,16 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/internal/consensus"
-	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
-	"github.com/ari-anchor/sei-tendermint/internal/p2p"
-	sm "github.com/ari-anchor/sei-tendermint/internal/state"
-	"github.com/ari-anchor/sei-tendermint/internal/store"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/libs/service"
-	bcproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/blocksync"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/internal/consensus"
+	"github.com/anchorageoss/sei-tendermint/internal/eventbus"
+	"github.com/anchorageoss/sei-tendermint/internal/p2p"
+	sm "github.com/anchorageoss/sei-tendermint/internal/state"
+	"github.com/anchorageoss/sei-tendermint/internal/store"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
+	bcproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/blocksync"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 var _ service.Service = (*Reactor)(nil)
@@ -590,7 +590,7 @@ func (r *Reactor) poolRoutine(ctx context.Context, stateSynced bool, blockSyncCh
 			first, second, extCommit := r.pool.PeekTwoBlocks()
 			if first != nil && extCommit == nil &&
 				state.ConsensusParams.ABCI.VoteExtensionsEnabled(first.Height) {
-				// See https://github.com/ari-anchor/sei-tendermint/pull/8433#discussion_r866790631
+				// See https://github.com/anchorageoss/sei-tendermint/pull/8433#discussion_r866790631
 				panic(fmt.Errorf("peeked first block without extended commit at height %d - possible node store corruption", first.Height))
 			} else if first == nil || second == nil {
 				// we need to have fetched two consecutive blocks in order to

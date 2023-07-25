@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ari-anchor/sei-tendermint/libs/rand"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/libs/rand"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // NodeID returns a valid NodeID based on an inputted string

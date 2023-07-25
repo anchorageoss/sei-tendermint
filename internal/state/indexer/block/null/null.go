@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/ari-anchor/sei-tendermint/internal/pubsub/query"
-	"github.com/ari-anchor/sei-tendermint/internal/state/indexer"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/internal/pubsub/query"
+	"github.com/anchorageoss/sei-tendermint/internal/state/indexer"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 var _ indexer.BlockIndexer = (*BlockerIndexer)(nil)

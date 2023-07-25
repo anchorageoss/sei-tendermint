@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/internal/libs/protoio"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/libs/service"
-	privvalproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/privval"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/protoio"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
+	privvalproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/privval"
 )
 
 const (

@@ -3,7 +3,7 @@ package provider
 import (
 	"context"
 
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 //go:generate ../../scripts/mockery_generate.sh Provider

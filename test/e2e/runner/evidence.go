@@ -11,14 +11,14 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/internal/test/factory"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/privval"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	e2e "github.com/ari-anchor/sei-tendermint/test/e2e/pkg"
-	"github.com/ari-anchor/sei-tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/version"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/internal/test/factory"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/privval"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	e2e "github.com/anchorageoss/sei-tendermint/test/e2e/pkg"
+	"github.com/anchorageoss/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/version"
 )
 
 // 1 in 4 evidence is light client evidence, the rest is duplicate vote evidence

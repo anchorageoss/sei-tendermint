@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	tmcrypto "github.com/ari-anchor/sei-tendermint/proto/tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	tmcrypto "github.com/anchorageoss/sei-tendermint/proto/tendermint/crypto"
 )
 
 const (

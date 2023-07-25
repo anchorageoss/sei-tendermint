@@ -14,7 +14,7 @@ import (
 	"sync"
 	"time"
 
-	rpctypes "github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/types"
+	rpctypes "github.com/anchorageoss/sei-tendermint/rpc/jsonrpc/types"
 )
 
 const (

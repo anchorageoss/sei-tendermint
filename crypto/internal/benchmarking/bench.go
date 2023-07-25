@@ -4,7 +4,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto"
 )
 
 // The code in this file is adapted from agl/ed25519.

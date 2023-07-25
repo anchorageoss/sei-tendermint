@@ -18,11 +18,11 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/ari-anchor/sei-tendermint/internal/rpc/core"
-	"github.com/ari-anchor/sei-tendermint/libs/bytes"
-	"github.com/ari-anchor/sei-tendermint/rpc/client"
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/internal/rpc/core"
+	"github.com/anchorageoss/sei-tendermint/libs/bytes"
+	"github.com/anchorageoss/sei-tendermint/rpc/client"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // Client wraps arbitrary implementations of the various interfaces.

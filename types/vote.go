@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/internal/libs/protoio"
-	tmbytes "github.com/ari-anchor/sei-tendermint/libs/bytes"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/protoio"
+	tmbytes "github.com/anchorageoss/sei-tendermint/libs/bytes"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
 )
 
 const (
@@ -315,7 +315,7 @@ func (vote *Vote) ValidateBasic() error {
 
 	// We should only ever see vote extensions in non-nil precommits, otherwise
 	// this is a violation of the specification.
-	// https://github.com/ari-anchor/sei-tendermint/issues/8487
+	// https://github.com/anchorageoss/sei-tendermint/issues/8487
 	if vote.Type != tmproto.PrecommitType || (vote.Type == tmproto.PrecommitType && vote.BlockID.IsNil()) {
 		if len(vote.Extension) > 0 {
 			return errors.New("unexpected vote extension")

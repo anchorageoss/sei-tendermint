@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/ari-anchor/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/config"
 )
 
 // MakeShowNodeIDCommand constructs a command to dump the node ID to stdout.

@@ -7,11 +7,11 @@ import (
 	"math/rand"
 	"time"
 
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/internal/mempool"
-	"github.com/ari-anchor/sei-tendermint/internal/state/indexer"
-	tmmath "github.com/ari-anchor/sei-tendermint/libs/math"
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/internal/mempool"
+	"github.com/anchorageoss/sei-tendermint/internal/state/indexer"
+	tmmath "github.com/anchorageoss/sei-tendermint/libs/math"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
 )
 
 //-----------------------------------------------------------------------------

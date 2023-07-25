@@ -5,9 +5,9 @@ import (
 	"io"
 	"sync"
 
-	"github.com/ari-anchor/sei-tendermint/libs/service"
-	privvalproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/privval"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
+	privvalproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/privval"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // ValidationRequestHandlerFunc handles different remoteSigner requests

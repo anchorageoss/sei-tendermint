@@ -9,7 +9,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	tmos "github.com/ari-anchor/sei-tendermint/libs/os"
+	tmos "github.com/anchorageoss/sei-tendermint/libs/os"
 )
 
 func TestCopyFile(t *testing.T) {
@@ -73,7 +73,7 @@ func TestEnsureDir(t *testing.T) {
 
 // Ensure that using CopyFile does not truncate the destination file before
 // the origin is positively a non-directory and that it is ready for copying.
-// See https://github.com/ari-anchor/sei-tendermint/issues/6427
+// See https://github.com/anchorageoss/sei-tendermint/issues/6427
 func TestTrickedTruncation(t *testing.T) {
 	tmpDir := t.TempDir()
 

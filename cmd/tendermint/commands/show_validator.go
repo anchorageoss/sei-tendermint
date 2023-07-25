@@ -6,14 +6,14 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	tmjson "github.com/ari-anchor/sei-tendermint/libs/json"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	tmnet "github.com/ari-anchor/sei-tendermint/libs/net"
-	tmos "github.com/ari-anchor/sei-tendermint/libs/os"
-	"github.com/ari-anchor/sei-tendermint/privval"
-	tmgrpc "github.com/ari-anchor/sei-tendermint/privval/grpc"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	tmjson "github.com/anchorageoss/sei-tendermint/libs/json"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	tmnet "github.com/anchorageoss/sei-tendermint/libs/net"
+	tmos "github.com/anchorageoss/sei-tendermint/libs/os"
+	"github.com/anchorageoss/sei-tendermint/privval"
+	tmgrpc "github.com/anchorageoss/sei-tendermint/privval/grpc"
 )
 
 // MakeShowValidatorCommand constructs a command to show the validator info.

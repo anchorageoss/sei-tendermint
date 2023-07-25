@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/internal/state"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/proto/tendermint/dbsync"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/internal/state"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/proto/tendermint/dbsync"
+	"github.com/anchorageoss/sei-tendermint/types"
 	"github.com/stretchr/testify/require"
 )
 

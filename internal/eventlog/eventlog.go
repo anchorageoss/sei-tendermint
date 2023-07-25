@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/internal/eventlog/cursor"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/internal/eventlog/cursor"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // A Log is a reverse time-ordered log of events in a sliding window of time

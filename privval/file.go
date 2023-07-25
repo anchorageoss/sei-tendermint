@@ -11,18 +11,18 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
-	"github.com/ari-anchor/sei-tendermint/crypto/secp256k1"
-	"github.com/ari-anchor/sei-tendermint/internal/jsontypes"
-	"github.com/ari-anchor/sei-tendermint/internal/libs/protoio"
-	"github.com/ari-anchor/sei-tendermint/internal/libs/tempfile"
-	tmbytes "github.com/ari-anchor/sei-tendermint/libs/bytes"
-	tmjson "github.com/ari-anchor/sei-tendermint/libs/json"
-	tmos "github.com/ari-anchor/sei-tendermint/libs/os"
-	tmtime "github.com/ari-anchor/sei-tendermint/libs/time"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/ed25519"
+	"github.com/anchorageoss/sei-tendermint/crypto/secp256k1"
+	"github.com/anchorageoss/sei-tendermint/internal/jsontypes"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/protoio"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/tempfile"
+	tmbytes "github.com/anchorageoss/sei-tendermint/libs/bytes"
+	tmjson "github.com/anchorageoss/sei-tendermint/libs/json"
+	tmos "github.com/anchorageoss/sei-tendermint/libs/os"
+	tmtime "github.com/anchorageoss/sei-tendermint/libs/time"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // TODO: type ?

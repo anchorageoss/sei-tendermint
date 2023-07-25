@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	metricsgen "github.com/ari-anchor/sei-tendermint/scripts/metricsgen"
+	metricsgen "github.com/anchorageoss/sei-tendermint/scripts/metricsgen"
 	"github.com/stretchr/testify/require"
 )
 

@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"strings"
 
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	tmpubsub "github.com/ari-anchor/sei-tendermint/internal/pubsub"
-	tmquery "github.com/ari-anchor/sei-tendermint/internal/pubsub/query"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/libs/service"
-	"github.com/ari-anchor/sei-tendermint/types"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	tmpubsub "github.com/anchorageoss/sei-tendermint/internal/pubsub"
+	tmquery "github.com/anchorageoss/sei-tendermint/internal/pubsub/query"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // Subscription is a proxy interface for a pubsub Subscription.

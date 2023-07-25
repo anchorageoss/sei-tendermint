@@ -3,12 +3,12 @@ package mock
 import (
 	"context"
 
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/internal/proxy"
-	"github.com/ari-anchor/sei-tendermint/libs/bytes"
-	"github.com/ari-anchor/sei-tendermint/rpc/client"
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
-	"github.com/ari-anchor/sei-tendermint/types"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/internal/proxy"
+	"github.com/anchorageoss/sei-tendermint/libs/bytes"
+	"github.com/anchorageoss/sei-tendermint/rpc/client"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // ABCIApp will send all abci related request to the named app,

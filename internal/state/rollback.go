@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/privval"
-	"github.com/ari-anchor/sei-tendermint/version"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/privval"
+	"github.com/anchorageoss/sei-tendermint/version"
 )
 
 func resetPrivValidatorConfig(privValidatorConfig config.PrivValidatorConfig) error {

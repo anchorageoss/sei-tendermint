@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 type lightBlockResponse struct {

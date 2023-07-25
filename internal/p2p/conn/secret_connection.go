@@ -22,12 +22,12 @@ import (
 	"golang.org/x/crypto/hkdf"
 	"golang.org/x/crypto/nacl/box"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
-	"github.com/ari-anchor/sei-tendermint/crypto/encoding"
-	"github.com/ari-anchor/sei-tendermint/internal/libs/async"
-	"github.com/ari-anchor/sei-tendermint/internal/libs/protoio"
-	tmp2p "github.com/ari-anchor/sei-tendermint/proto/tendermint/p2p"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/ed25519"
+	"github.com/anchorageoss/sei-tendermint/crypto/encoding"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/async"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/protoio"
+	tmp2p "github.com/anchorageoss/sei-tendermint/proto/tendermint/p2p"
 )
 
 // 4 + 1024 == 1028 total frame size
@@ -53,13 +53,13 @@ var (
 
 // SecretConnection implements net.Conn.
 // It is an implementation of the STS protocol.
-// See https://github.com/ari-anchor/sei-tendermint/blob/0.1/docs/sts-final.pdf for
+// See https://github.com/anchorageoss/sei-tendermint/blob/0.1/docs/sts-final.pdf for
 // details on the protocol.
 //
 // Consumers of the SecretConnection are responsible for authenticating
 // the remote peer's pubkey against known information, like a nodeID.
 // Otherwise they are vulnerable to MITM.
-// (TODO(ismail): see also https://github.com/ari-anchor/sei-tendermint/issues/3010)
+// (TODO(ismail): see also https://github.com/anchorageoss/sei-tendermint/issues/3010)
 type SecretConnection struct {
 
 	// immutable
@@ -456,7 +456,7 @@ func incrNonce(nonce *[aeadNonceSize]byte) {
 	counter := binary.LittleEndian.Uint64(nonce[4:])
 	if counter == math.MaxUint64 {
 		// Terminates the session and makes sure the nonce would not re-used.
-		// See https://github.com/ari-anchor/sei-tendermint/issues/3531
+		// See https://github.com/anchorageoss/sei-tendermint/issues/3531
 		panic("can't increase nonce without overflow")
 	}
 	counter++

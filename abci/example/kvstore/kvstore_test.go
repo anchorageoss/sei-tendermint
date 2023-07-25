@@ -9,13 +9,13 @@ import (
 	"github.com/fortytw2/leaktest"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/libs/service"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
 
-	abciclient "github.com/ari-anchor/sei-tendermint/abci/client"
-	"github.com/ari-anchor/sei-tendermint/abci/example/code"
-	abciserver "github.com/ari-anchor/sei-tendermint/abci/server"
-	"github.com/ari-anchor/sei-tendermint/abci/types"
+	abciclient "github.com/anchorageoss/sei-tendermint/abci/client"
+	"github.com/anchorageoss/sei-tendermint/abci/example/code"
+	abciserver "github.com/anchorageoss/sei-tendermint/abci/server"
+	"github.com/anchorageoss/sei-tendermint/abci/types"
 )
 
 const (

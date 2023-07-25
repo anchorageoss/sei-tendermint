@@ -9,10 +9,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
-	tmtime "github.com/ari-anchor/sei-tendermint/libs/time"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	tmrand "github.com/anchorageoss/sei-tendermint/libs/rand"
+	tmtime "github.com/anchorageoss/sei-tendermint/libs/time"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
 )
 
 func TestVoteSet_AddVote_Good(t *testing.T) {

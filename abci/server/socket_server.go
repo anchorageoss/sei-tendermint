@@ -10,10 +10,10 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	tmnet "github.com/ari-anchor/sei-tendermint/libs/net"
-	"github.com/ari-anchor/sei-tendermint/libs/service"
+	"github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	tmnet "github.com/anchorageoss/sei-tendermint/libs/net"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
 )
 
 // var maxNumberConnections = 2

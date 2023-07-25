@@ -11,9 +11,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	rpcserver "github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/server"
-	"github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/types"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	rpcserver "github.com/anchorageoss/sei-tendermint/rpc/jsonrpc/server"
+	"github.com/anchorageoss/sei-tendermint/rpc/jsonrpc/types"
 )
 
 func FuzzRPCJSONRPCServer(f *testing.F) {

@@ -11,12 +11,12 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	abcitypes "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/internal/state/indexer"
-	"github.com/ari-anchor/sei-tendermint/internal/state/mocks"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/types"
+	abcitypes "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/internal/state/indexer"
+	"github.com/anchorageoss/sei-tendermint/internal/state/mocks"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/types"
 
 	_ "github.com/lib/pq" // for the psql sink
 )

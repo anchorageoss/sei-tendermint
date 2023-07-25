@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/ari-anchor/sei-tendermint/config"
-	dstypes "github.com/ari-anchor/sei-tendermint/proto/tendermint/dbsync"
+	"github.com/anchorageoss/sei-tendermint/config"
+	dstypes "github.com/anchorageoss/sei-tendermint/proto/tendermint/dbsync"
 	"github.com/stretchr/testify/require"
 )
 

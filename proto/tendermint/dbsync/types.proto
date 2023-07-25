@@ -1,7 +1,7 @@
 syntax = "proto3";
 package seitendermint.dbsync;
 
-option go_package = "github.com/ari-anchor/sei-tendermint/proto/tendermint/dbsync";
+option go_package = "github.com/anchorageoss/sei-tendermint/proto/tendermint/dbsync";
 
 import "gogoproto/gogo.proto";
 import "tendermint/types/types.proto";

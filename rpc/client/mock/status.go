@@ -3,8 +3,8 @@ package mock
 import (
 	"context"
 
-	"github.com/ari-anchor/sei-tendermint/rpc/client"
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
+	"github.com/anchorageoss/sei-tendermint/rpc/client"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
 )
 
 // StatusMock returns the result specified by the Call

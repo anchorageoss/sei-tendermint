@@ -13,9 +13,9 @@ import (
 	"github.com/fortytw2/leaktest"
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/ari-anchor/sei-tendermint/internal/eventlog"
-	"github.com/ari-anchor/sei-tendermint/internal/eventlog/cursor"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/internal/eventlog"
+	"github.com/anchorageoss/sei-tendermint/internal/eventlog/cursor"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // fakeTime is a fake clock to use to control cursor assignment.

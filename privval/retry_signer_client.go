@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // RetrySignerClient wraps SignerClient adding retry for each operation (except

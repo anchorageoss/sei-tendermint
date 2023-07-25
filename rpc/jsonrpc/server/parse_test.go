@@ -9,7 +9,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ari-anchor/sei-tendermint/libs/bytes"
+	"github.com/anchorageoss/sei-tendermint/libs/bytes"
 )
 
 func TestParseJSONMap(t *testing.T) {

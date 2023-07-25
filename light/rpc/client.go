@@ -10,16 +10,16 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/crypto/merkle"
-	tmbytes "github.com/ari-anchor/sei-tendermint/libs/bytes"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	tmmath "github.com/ari-anchor/sei-tendermint/libs/math"
-	service "github.com/ari-anchor/sei-tendermint/libs/service"
-	rpcclient "github.com/ari-anchor/sei-tendermint/rpc/client"
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
-	rpctypes "github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/types"
-	"github.com/ari-anchor/sei-tendermint/types"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/crypto/merkle"
+	tmbytes "github.com/anchorageoss/sei-tendermint/libs/bytes"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	tmmath "github.com/anchorageoss/sei-tendermint/libs/math"
+	service "github.com/anchorageoss/sei-tendermint/libs/service"
+	rpcclient "github.com/anchorageoss/sei-tendermint/rpc/client"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
+	rpctypes "github.com/anchorageoss/sei-tendermint/rpc/jsonrpc/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // KeyPathFunc builds a merkle path out of the given path and key.

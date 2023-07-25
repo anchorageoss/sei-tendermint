@@ -13,10 +13,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
-	"github.com/ari-anchor/sei-tendermint/rpc/client/http"
-	e2e "github.com/ari-anchor/sei-tendermint/test/e2e/pkg"
-	"github.com/ari-anchor/sei-tendermint/types"
+	tmrand "github.com/anchorageoss/sei-tendermint/libs/rand"
+	"github.com/anchorageoss/sei-tendermint/rpc/client/http"
+	e2e "github.com/anchorageoss/sei-tendermint/test/e2e/pkg"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 const (

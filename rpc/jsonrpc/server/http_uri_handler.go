@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	rpctypes "github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/types"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	rpctypes "github.com/anchorageoss/sei-tendermint/rpc/jsonrpc/types"
 )
 
 // uriReqID is a placeholder ID used for GET requests, which do not receive a

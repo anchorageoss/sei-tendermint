@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/libs/bits"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/libs/bits"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 //-----------------------------------------------------------------------------

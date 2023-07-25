@@ -3,9 +3,9 @@ package commands
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/internal/consensus"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/internal/consensus"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
 )
 
 // MakeReplayCommand constructs a command to replay messages from the WAL into consensus.

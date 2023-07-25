@@ -5,7 +5,7 @@
 // Clients register subscriptions with a query to select which messages they
 // wish to receive. When messages are published, they are broadcast to all
 // clients whose subscription query matches that message. Queries are
-// constructed using the github.com/ari-anchor/sei-tendermint/internal/pubsub/query
+// constructed using the github.com/anchorageoss/sei-tendermint/internal/pubsub/query
 // package.
 //
 // Example:
@@ -39,11 +39,11 @@ import (
 	"fmt"
 	"sync"
 
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/internal/pubsub/query"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/libs/service"
-	"github.com/ari-anchor/sei-tendermint/types"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/internal/pubsub/query"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 var (

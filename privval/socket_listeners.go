@@ -4,7 +4,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
+	"github.com/anchorageoss/sei-tendermint/crypto/ed25519"
 )
 
 const (
@@ -139,7 +139,7 @@ func (ln *UnixListener) Accept() (net.Conn, error) {
 	conn := newTimeoutConn(tc, ln.timeoutReadWrite)
 
 	// TODO: wrap in something that authenticates
-	// with a MAC - https://github.com/ari-anchor/sei-tendermint/issues/3099
+	// with a MAC - https://github.com/anchorageoss/sei-tendermint/issues/3099
 
 	return conn, nil
 }

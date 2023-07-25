@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/libs/bytes"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/libs/bytes"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 //-----------------------------------------------------------------------------

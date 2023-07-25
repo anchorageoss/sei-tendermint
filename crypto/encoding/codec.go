@@ -3,12 +3,12 @@ package encoding
 import (
 	"fmt"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
-	"github.com/ari-anchor/sei-tendermint/crypto/secp256k1"
-	"github.com/ari-anchor/sei-tendermint/crypto/sr25519"
-	"github.com/ari-anchor/sei-tendermint/internal/jsontypes"
-	cryptoproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/ed25519"
+	"github.com/anchorageoss/sei-tendermint/crypto/secp256k1"
+	"github.com/anchorageoss/sei-tendermint/crypto/sr25519"
+	"github.com/anchorageoss/sei-tendermint/internal/jsontypes"
+	cryptoproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/crypto"
 )
 
 func init() {

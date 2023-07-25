@@ -5,9 +5,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	tmjson "github.com/ari-anchor/sei-tendermint/libs/json"
-	"github.com/ari-anchor/sei-tendermint/privval"
-	"github.com/ari-anchor/sei-tendermint/types"
+	tmjson "github.com/anchorageoss/sei-tendermint/libs/json"
+	"github.com/anchorageoss/sei-tendermint/privval"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // GenValidatorCmd allows the generation of a keypair for a

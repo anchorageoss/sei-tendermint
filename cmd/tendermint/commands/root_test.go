@@ -12,10 +12,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cfg "github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/libs/cli"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	tmos "github.com/ari-anchor/sei-tendermint/libs/os"
+	cfg "github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/libs/cli"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	tmos "github.com/anchorageoss/sei-tendermint/libs/os"
 )
 
 // writeConfigVals writes a toml file with the given values.

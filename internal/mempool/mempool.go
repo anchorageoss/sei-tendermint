@@ -9,13 +9,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	abciclient "github.com/ari-anchor/sei-tendermint/abci/client"
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/internal/libs/clist"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	tmmath "github.com/ari-anchor/sei-tendermint/libs/math"
-	"github.com/ari-anchor/sei-tendermint/types"
+	abciclient "github.com/anchorageoss/sei-tendermint/abci/client"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/clist"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	tmmath "github.com/anchorageoss/sei-tendermint/libs/math"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 var _ Mempool = (*TxMempool)(nil)

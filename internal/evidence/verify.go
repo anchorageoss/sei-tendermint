@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/light"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/light"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // verify verifies the evidence fully by checking:

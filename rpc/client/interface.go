@@ -23,9 +23,9 @@ implementation.
 import (
 	"context"
 
-	"github.com/ari-anchor/sei-tendermint/libs/bytes"
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/libs/bytes"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 //go:generate ../../scripts/mockery_generate.sh Client

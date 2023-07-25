@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto"
 )
 
 // TrustOptions are the trust parameters needed when a new light client

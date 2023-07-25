@@ -10,12 +10,12 @@ import (
 	"github.com/fortytw2/leaktest"
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/ari-anchor/sei-tendermint/internal/eventlog"
-	"github.com/ari-anchor/sei-tendermint/internal/eventlog/cursor"
-	rpccore "github.com/ari-anchor/sei-tendermint/internal/rpc/core"
-	"github.com/ari-anchor/sei-tendermint/rpc/client/eventstream"
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/internal/eventlog"
+	"github.com/anchorageoss/sei-tendermint/internal/eventlog/cursor"
+	rpccore "github.com/anchorageoss/sei-tendermint/internal/rpc/core"
+	"github.com/anchorageoss/sei-tendermint/rpc/client/eventstream"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 func TestStream_filterOrder(t *testing.T) {

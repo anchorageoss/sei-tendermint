@@ -3,9 +3,9 @@ package abciclient
 import (
 	"context"
 
-	types "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/libs/service"
+	types "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
 )
 
 // NOTE: use defer to unlock mutex because Application might panic (e.g., in

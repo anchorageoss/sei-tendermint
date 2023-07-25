@@ -10,9 +10,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	tmos "github.com/ari-anchor/sei-tendermint/libs/os"
-	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	tmos "github.com/anchorageoss/sei-tendermint/libs/os"
+	tmrand "github.com/anchorageoss/sei-tendermint/libs/rand"
 )
 
 func createTestGroupWithHeadSizeLimit(ctx context.Context, t *testing.T, logger log.Logger, headSizeLimit int64) *Group {

@@ -9,17 +9,17 @@ import (
 	"github.com/google/orderedcode"
 	dbm "github.com/tendermint/tm-db"
 
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	tmmath "github.com/ari-anchor/sei-tendermint/libs/math"
-	tmstate "github.com/ari-anchor/sei-tendermint/proto/tendermint/state"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/types"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	tmmath "github.com/anchorageoss/sei-tendermint/libs/math"
+	tmstate "github.com/anchorageoss/sei-tendermint/proto/tendermint/state"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 const (
 	// persist validators every valSetCheckpointInterval blocks to avoid
 	// LoadValidators taking too much time.
-	// https://github.com/ari-anchor/sei-tendermint/pull/3438
+	// https://github.com/anchorageoss/sei-tendermint/pull/3438
 	// 100000 results in ~ 100ms to get 100 validators (see BenchmarkLoadValidators)
 	valSetCheckpointInterval = 100000
 )

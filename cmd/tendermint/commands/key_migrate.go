@@ -6,10 +6,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/scripts/keymigrate"
-	"github.com/ari-anchor/sei-tendermint/scripts/scmigrate"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/scripts/keymigrate"
+	"github.com/anchorageoss/sei-tendermint/scripts/scmigrate"
 )
 
 func MakeKeyMigrateCommand(conf *config.Config, logger log.Logger) *cobra.Command {

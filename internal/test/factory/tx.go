@@ -1,6 +1,6 @@
 package factory
 
-import "github.com/ari-anchor/sei-tendermint/types"
+import "github.com/anchorageoss/sei-tendermint/types"
 
 func MakeNTxs(height, n int64) []types.Tx {
 	txs := make([]types.Tx, n)

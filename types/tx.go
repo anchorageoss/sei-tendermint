@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"sort"
 
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/merkle"
-	tmbytes "github.com/ari-anchor/sei-tendermint/libs/bytes"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/merkle"
+	tmbytes "github.com/anchorageoss/sei-tendermint/libs/bytes"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
 )
 
 // Tx is an arbitrary byte array.

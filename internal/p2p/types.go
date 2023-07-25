@@ -1,7 +1,7 @@
 package p2p
 
 import (
-	"github.com/ari-anchor/sei-tendermint/internal/p2p/conn"
+	"github.com/anchorageoss/sei-tendermint/internal/p2p/conn"
 )
 
 type ChannelDescriptor = conn.ChannelDescriptor

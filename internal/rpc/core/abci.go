@@ -3,9 +3,9 @@ package core
 import (
 	"context"
 
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/internal/proxy"
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/internal/proxy"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
 )
 
 // ABCIQuery queries the application for some information.

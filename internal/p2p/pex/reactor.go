@@ -6,13 +6,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/internal/p2p"
-	"github.com/ari-anchor/sei-tendermint/internal/p2p/conn"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/libs/service"
-	protop2p "github.com/ari-anchor/sei-tendermint/proto/tendermint/p2p"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/internal/p2p"
+	"github.com/anchorageoss/sei-tendermint/internal/p2p/conn"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
+	protop2p "github.com/anchorageoss/sei-tendermint/proto/tendermint/p2p"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 var (

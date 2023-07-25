@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // ErrFilterTimeout indicates that a filter operation timed out.

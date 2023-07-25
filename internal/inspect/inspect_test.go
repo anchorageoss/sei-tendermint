@@ -15,16 +15,16 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	abcitypes "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/internal/inspect"
-	"github.com/ari-anchor/sei-tendermint/internal/pubsub/query"
-	"github.com/ari-anchor/sei-tendermint/internal/state/indexer"
-	indexermocks "github.com/ari-anchor/sei-tendermint/internal/state/indexer/mocks"
-	statemocks "github.com/ari-anchor/sei-tendermint/internal/state/mocks"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	httpclient "github.com/ari-anchor/sei-tendermint/rpc/client/http"
-	"github.com/ari-anchor/sei-tendermint/types"
+	abcitypes "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/internal/inspect"
+	"github.com/anchorageoss/sei-tendermint/internal/pubsub/query"
+	"github.com/anchorageoss/sei-tendermint/internal/state/indexer"
+	indexermocks "github.com/anchorageoss/sei-tendermint/internal/state/indexer/mocks"
+	statemocks "github.com/anchorageoss/sei-tendermint/internal/state/mocks"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	httpclient "github.com/anchorageoss/sei-tendermint/rpc/client/http"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 func TestInspectConstructor(t *testing.T) {
@@ -261,7 +261,7 @@ func TestBlockResults(t *testing.T) {
 	testHeight := int64(1)
 	testGasUsed := int64(100)
 	stateStoreMock := &statemocks.Store{}
-	//	tmstate "github.com/ari-anchor/sei-tendermint/proto/tendermint/state"
+	//	tmstate "github.com/anchorageoss/sei-tendermint/proto/tendermint/state"
 	stateStoreMock.On("LoadFinalizeBlockResponses", testHeight).Return(&abcitypes.ResponseFinalizeBlock{
 		TxResults: []*abcitypes.ExecTxResult{
 			{

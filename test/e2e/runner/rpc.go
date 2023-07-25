@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	rpchttp "github.com/ari-anchor/sei-tendermint/rpc/client/http"
-	rpctypes "github.com/ari-anchor/sei-tendermint/rpc/coretypes"
-	e2e "github.com/ari-anchor/sei-tendermint/test/e2e/pkg"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	rpchttp "github.com/anchorageoss/sei-tendermint/rpc/client/http"
+	rpctypes "github.com/anchorageoss/sei-tendermint/rpc/coretypes"
+	e2e "github.com/anchorageoss/sei-tendermint/test/e2e/pkg"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // waitForHeight waits for the network to reach a certain height (or above),

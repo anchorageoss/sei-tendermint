@@ -4,12 +4,12 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/encoding"
-	cryptoproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/crypto"
-	privvalproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/privval"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/encoding"
+	cryptoproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/crypto"
+	privvalproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/privval"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 func DefaultValidationRequestHandler(

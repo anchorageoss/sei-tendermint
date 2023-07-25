@@ -12,9 +12,9 @@ import (
 	"github.com/oasisprotocol/curve25519-voi/primitives/ed25519"
 	"github.com/oasisprotocol/curve25519-voi/primitives/ed25519/extra/cache"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/internal/jsontypes"
-	tmjson "github.com/ari-anchor/sei-tendermint/libs/json"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/internal/jsontypes"
+	tmjson "github.com/anchorageoss/sei-tendermint/libs/json"
 )
 
 //-------------------------------------

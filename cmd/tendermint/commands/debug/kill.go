@@ -13,10 +13,10 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/libs/cli"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	rpchttp "github.com/ari-anchor/sei-tendermint/rpc/client/http"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/libs/cli"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	rpchttp "github.com/anchorageoss/sei-tendermint/rpc/client/http"
 )
 
 func getKillCmd(logger log.Logger) *cobra.Command {

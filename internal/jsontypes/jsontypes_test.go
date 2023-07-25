@@ -3,7 +3,7 @@ package jsontypes_test
 import (
 	"testing"
 
-	"github.com/ari-anchor/sei-tendermint/internal/jsontypes"
+	"github.com/anchorageoss/sei-tendermint/internal/jsontypes"
 )
 
 type testPtrType struct {

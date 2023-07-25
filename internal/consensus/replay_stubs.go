@@ -3,13 +3,13 @@ package consensus
 import (
 	"context"
 
-	abciclient "github.com/ari-anchor/sei-tendermint/abci/client"
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/internal/libs/clist"
-	"github.com/ari-anchor/sei-tendermint/internal/mempool"
-	"github.com/ari-anchor/sei-tendermint/internal/proxy"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/types"
+	abciclient "github.com/anchorageoss/sei-tendermint/abci/client"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/clist"
+	"github.com/anchorageoss/sei-tendermint/internal/mempool"
+	"github.com/anchorageoss/sei-tendermint/internal/proxy"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 //-----------------------------------------------------------------------------

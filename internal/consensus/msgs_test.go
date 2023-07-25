@@ -8,22 +8,22 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/version"
+	"github.com/anchorageoss/sei-tendermint/version"
 
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/merkle"
-	cstypes "github.com/ari-anchor/sei-tendermint/internal/consensus/types"
-	"github.com/ari-anchor/sei-tendermint/internal/test/factory"
-	"github.com/ari-anchor/sei-tendermint/libs/bits"
-	"github.com/ari-anchor/sei-tendermint/libs/bytes"
-	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
-	tmcons "github.com/ari-anchor/sei-tendermint/proto/tendermint/consensus"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/merkle"
+	cstypes "github.com/anchorageoss/sei-tendermint/internal/consensus/types"
+	"github.com/anchorageoss/sei-tendermint/internal/test/factory"
+	"github.com/anchorageoss/sei-tendermint/libs/bits"
+	"github.com/anchorageoss/sei-tendermint/libs/bytes"
+	tmrand "github.com/anchorageoss/sei-tendermint/libs/rand"
+	tmcons "github.com/anchorageoss/sei-tendermint/proto/tendermint/consensus"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 func TestMsgToProto(t *testing.T) {

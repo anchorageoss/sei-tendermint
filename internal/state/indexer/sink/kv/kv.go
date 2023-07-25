@@ -5,12 +5,12 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	abci "github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/internal/pubsub/query"
-	"github.com/ari-anchor/sei-tendermint/internal/state/indexer"
-	kvb "github.com/ari-anchor/sei-tendermint/internal/state/indexer/block/kv"
-	kvt "github.com/ari-anchor/sei-tendermint/internal/state/indexer/tx/kv"
-	"github.com/ari-anchor/sei-tendermint/types"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/internal/pubsub/query"
+	"github.com/anchorageoss/sei-tendermint/internal/state/indexer"
+	kvb "github.com/anchorageoss/sei-tendermint/internal/state/indexer/block/kv"
+	kvt "github.com/anchorageoss/sei-tendermint/internal/state/indexer/tx/kv"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 var _ indexer.EventSink = (*EventSink)(nil)

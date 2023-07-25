@@ -13,7 +13,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/ari-anchor/sei-tendermint/internal/consensus"
+	"github.com/anchorageoss/sei-tendermint/internal/consensus"
 )
 
 func main() {

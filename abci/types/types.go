@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"encoding/json"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/encoding"
-	"github.com/ari-anchor/sei-tendermint/internal/jsontypes"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/encoding"
+	"github.com/anchorageoss/sei-tendermint/internal/jsontypes"
 	"github.com/gogo/protobuf/jsonpb"
 )
 

@@ -12,9 +12,9 @@ import (
 	"os/signal"
 	"path/filepath"
 
-	"github.com/ari-anchor/sei-tendermint/rpc/client/eventstream"
-	rpcclient "github.com/ari-anchor/sei-tendermint/rpc/client/http"
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
+	"github.com/anchorageoss/sei-tendermint/rpc/client/eventstream"
+	rpcclient "github.com/anchorageoss/sei-tendermint/rpc/client/http"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
 )
 
 var (

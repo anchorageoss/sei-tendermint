@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ari-anchor/sei-tendermint/libs/bytes"
-	tmstrings "github.com/ari-anchor/sei-tendermint/libs/strings"
-	tmp2p "github.com/ari-anchor/sei-tendermint/proto/tendermint/p2p"
+	"github.com/anchorageoss/sei-tendermint/libs/bytes"
+	tmstrings "github.com/anchorageoss/sei-tendermint/libs/strings"
+	tmp2p "github.com/anchorageoss/sei-tendermint/proto/tendermint/p2p"
 )
 
 const (

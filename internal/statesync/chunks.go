@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // errDone is returned by chunkQueue.Next() when all chunks have been returned.

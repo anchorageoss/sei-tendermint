@@ -10,9 +10,9 @@ package server
 import (
 	"fmt"
 
-	"github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/libs/service"
+	"github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
 )
 
 func NewServer(logger log.Logger, protoAddr, transport string, app types.Application) (service.Service, error) {

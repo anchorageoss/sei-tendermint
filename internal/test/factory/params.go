@@ -3,7 +3,7 @@ package factory
 import (
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // ConsensusParams returns a default set of ConsensusParams that are suitable

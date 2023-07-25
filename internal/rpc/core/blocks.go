@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"sort"
 
-	tmquery "github.com/ari-anchor/sei-tendermint/internal/pubsub/query"
-	"github.com/ari-anchor/sei-tendermint/internal/state/indexer"
-	tmmath "github.com/ari-anchor/sei-tendermint/libs/math"
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
-	"github.com/ari-anchor/sei-tendermint/types"
+	tmquery "github.com/anchorageoss/sei-tendermint/internal/pubsub/query"
+	"github.com/anchorageoss/sei-tendermint/internal/state/indexer"
+	tmmath "github.com/anchorageoss/sei-tendermint/libs/math"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // BlockchainInfo gets block headers for minHeight <= height <= maxHeight.

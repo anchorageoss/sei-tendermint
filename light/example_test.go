@@ -5,16 +5,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/light/provider"
+	"github.com/anchorageoss/sei-tendermint/light/provider"
 
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/ari-anchor/sei-tendermint/abci/example/kvstore"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/light"
-	httpp "github.com/ari-anchor/sei-tendermint/light/provider/http"
-	dbs "github.com/ari-anchor/sei-tendermint/light/store/db"
-	rpctest "github.com/ari-anchor/sei-tendermint/rpc/test"
+	"github.com/anchorageoss/sei-tendermint/abci/example/kvstore"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/light"
+	httpp "github.com/anchorageoss/sei-tendermint/light/provider/http"
+	dbs "github.com/anchorageoss/sei-tendermint/light/store/db"
+	rpctest "github.com/anchorageoss/sei-tendermint/rpc/test"
 )
 
 // Manually getting light blocks and verifying them.

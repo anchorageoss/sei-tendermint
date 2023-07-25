@@ -5,7 +5,7 @@ import (
 	"io"
 	"testing"
 
-	metricsdiff "github.com/ari-anchor/sei-tendermint/scripts/metricsgen/metricsdiff"
+	metricsdiff "github.com/anchorageoss/sei-tendermint/scripts/metricsgen/metricsdiff"
 	"github.com/stretchr/testify/require"
 )
 

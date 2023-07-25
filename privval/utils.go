@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	tmnet "github.com/ari-anchor/sei-tendermint/libs/net"
+	"github.com/anchorageoss/sei-tendermint/crypto/ed25519"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	tmnet "github.com/anchorageoss/sei-tendermint/libs/net"
 )
 
 // IsConnTimeout returns a boolean indicating whether the error is known to

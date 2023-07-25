@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
-	tmnet "github.com/ari-anchor/sei-tendermint/libs/net"
-	"github.com/ari-anchor/sei-tendermint/version"
+	"github.com/anchorageoss/sei-tendermint/crypto/ed25519"
+	tmnet "github.com/anchorageoss/sei-tendermint/libs/net"
+	"github.com/anchorageoss/sei-tendermint/version"
 )
 
 const testCh = 0x01

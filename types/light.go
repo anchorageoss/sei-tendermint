@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	tbytes "github.com/ari-anchor/sei-tendermint/libs/bytes"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
+	tbytes "github.com/anchorageoss/sei-tendermint/libs/bytes"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
 )
 
 // Info about the status of the light client

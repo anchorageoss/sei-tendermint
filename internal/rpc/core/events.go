@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/internal/eventlog"
-	"github.com/ari-anchor/sei-tendermint/internal/eventlog/cursor"
-	"github.com/ari-anchor/sei-tendermint/internal/jsontypes"
-	tmpubsub "github.com/ari-anchor/sei-tendermint/internal/pubsub"
-	tmquery "github.com/ari-anchor/sei-tendermint/internal/pubsub/query"
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
-	rpctypes "github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/types"
+	"github.com/anchorageoss/sei-tendermint/internal/eventlog"
+	"github.com/anchorageoss/sei-tendermint/internal/eventlog/cursor"
+	"github.com/anchorageoss/sei-tendermint/internal/jsontypes"
+	tmpubsub "github.com/anchorageoss/sei-tendermint/internal/pubsub"
+	tmquery "github.com/anchorageoss/sei-tendermint/internal/pubsub/query"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
+	rpctypes "github.com/anchorageoss/sei-tendermint/rpc/jsonrpc/types"
 )
 
 const (

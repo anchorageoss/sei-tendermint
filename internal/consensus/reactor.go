@@ -8,18 +8,18 @@ import (
 	"sync"
 	"time"
 
-	cstypes "github.com/ari-anchor/sei-tendermint/internal/consensus/types"
-	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
-	"github.com/ari-anchor/sei-tendermint/internal/p2p"
-	sm "github.com/ari-anchor/sei-tendermint/internal/state"
-	"github.com/ari-anchor/sei-tendermint/libs/bits"
-	tmevents "github.com/ari-anchor/sei-tendermint/libs/events"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/libs/service"
-	tmtime "github.com/ari-anchor/sei-tendermint/libs/time"
-	tmcons "github.com/ari-anchor/sei-tendermint/proto/tendermint/consensus"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/types"
+	cstypes "github.com/anchorageoss/sei-tendermint/internal/consensus/types"
+	"github.com/anchorageoss/sei-tendermint/internal/eventbus"
+	"github.com/anchorageoss/sei-tendermint/internal/p2p"
+	sm "github.com/anchorageoss/sei-tendermint/internal/state"
+	"github.com/anchorageoss/sei-tendermint/libs/bits"
+	tmevents "github.com/anchorageoss/sei-tendermint/libs/events"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
+	tmtime "github.com/anchorageoss/sei-tendermint/libs/time"
+	tmcons "github.com/anchorageoss/sei-tendermint/proto/tendermint/consensus"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 var (
@@ -93,7 +93,7 @@ const (
 )
 
 // NOTE: Temporary interface for switching to block sync, we should get rid of v0.
-// See: https://github.com/ari-anchor/sei-tendermint/issues/4595
+// See: https://github.com/anchorageoss/sei-tendermint/issues/4595
 type BlockSyncReactor interface {
 	SwitchToBlockSync(context.Context, sm.State) error
 

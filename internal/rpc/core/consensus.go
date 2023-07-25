@@ -3,8 +3,8 @@ package core
 import (
 	"context"
 
-	tmmath "github.com/ari-anchor/sei-tendermint/libs/math"
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
+	tmmath "github.com/anchorageoss/sei-tendermint/libs/math"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
 )
 
 // Validators gets the validator set at the given block height.

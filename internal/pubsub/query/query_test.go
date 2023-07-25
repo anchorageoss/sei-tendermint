@@ -6,14 +6,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/abci/types"
-	"github.com/ari-anchor/sei-tendermint/internal/pubsub/query"
-	"github.com/ari-anchor/sei-tendermint/internal/pubsub/query/syntax"
+	"github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/internal/pubsub/query"
+	"github.com/anchorageoss/sei-tendermint/internal/pubsub/query/syntax"
 )
 
 // Example events from the OpenAPI documentation:
 //
-//	https://github.com/ari-anchor/sei-tendermint/blob/master/rpc/openapi/openapi.yaml
+//	https://github.com/anchorageoss/sei-tendermint/blob/master/rpc/openapi/openapi.yaml
 //
 // Redactions:
 //

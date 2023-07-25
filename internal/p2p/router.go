@@ -14,10 +14,10 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/libs/service"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 const queueBufferDefault = 32
@@ -387,7 +387,7 @@ func (r *Router) routeChannel(
 					// reactor tried to send a message across a channel that the
 					// peer doesn't have available. This is a known issue due to
 					// how peer subscriptions work:
-					// https://github.com/ari-anchor/sei-tendermint/issues/6598
+					// https://github.com/anchorageoss/sei-tendermint/issues/6598
 					continue
 				}
 

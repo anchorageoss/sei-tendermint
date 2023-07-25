@@ -11,13 +11,13 @@ import (
 	"github.com/gogo/protobuf/proto"
 	gogotypes "github.com/gogo/protobuf/types"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/merkle"
-	"github.com/ari-anchor/sei-tendermint/libs/bits"
-	tmbytes "github.com/ari-anchor/sei-tendermint/libs/bytes"
-	tmmath "github.com/ari-anchor/sei-tendermint/libs/math"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/version"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/merkle"
+	"github.com/anchorageoss/sei-tendermint/libs/bits"
+	tmbytes "github.com/anchorageoss/sei-tendermint/libs/bytes"
+	tmmath "github.com/anchorageoss/sei-tendermint/libs/math"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/version"
 )
 
 const (
@@ -340,7 +340,7 @@ func MakeBlock(height int64, txs []Tx, lastCommit *Commit, evidence []Evidence) 
 // NOTE: changes to the Header should be duplicated in:
 // - header.Hash()
 // - abci.Header
-// - https://github.com/ari-anchor/sei-tendermint/blob/master/spec/core/data_structures.md
+// - https://github.com/anchorageoss/sei-tendermint/blob/master/spec/core/data_structures.md
 type Header struct {
 	// basic block info
 	Version version.Consensus `json:"version"`

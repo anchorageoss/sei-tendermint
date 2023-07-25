@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/internal/libs/clist"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/clist"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // TxInfo are parameters that get passed when attempting to add a tx to the

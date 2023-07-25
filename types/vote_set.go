@@ -8,8 +8,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ari-anchor/sei-tendermint/libs/bits"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/libs/bits"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
 )
 
 const (

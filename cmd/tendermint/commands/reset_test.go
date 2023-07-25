@@ -7,10 +7,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	cfg "github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/privval"
-	"github.com/ari-anchor/sei-tendermint/types"
+	cfg "github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/privval"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 func Test_ResetAll(t *testing.T) {

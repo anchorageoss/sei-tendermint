@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/libs/service"
-	privvalproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/privval"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
+	privvalproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/privval"
 )
 
 // SignerListenerEndpointOption sets an optional parameter on the SignerListenerEndpoint.

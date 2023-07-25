@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"reflect"
 
-	tmsync "github.com/ari-anchor/sei-tendermint/libs/sync"
+	tmsync "github.com/anchorageoss/sei-tendermint/libs/sync"
 )
 
 var (

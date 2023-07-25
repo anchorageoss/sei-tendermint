@@ -11,20 +11,20 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/ari-anchor/sei-tendermint/internal/eventbus"
-	"github.com/ari-anchor/sei-tendermint/internal/evidence"
-	"github.com/ari-anchor/sei-tendermint/internal/evidence/mocks"
-	sm "github.com/ari-anchor/sei-tendermint/internal/state"
-	smmocks "github.com/ari-anchor/sei-tendermint/internal/state/mocks"
-	sf "github.com/ari-anchor/sei-tendermint/internal/state/test/factory"
-	"github.com/ari-anchor/sei-tendermint/internal/store"
-	"github.com/ari-anchor/sei-tendermint/internal/test/factory"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/version"
+	"github.com/anchorageoss/sei-tendermint/internal/eventbus"
+	"github.com/anchorageoss/sei-tendermint/internal/evidence"
+	"github.com/anchorageoss/sei-tendermint/internal/evidence/mocks"
+	sm "github.com/anchorageoss/sei-tendermint/internal/state"
+	smmocks "github.com/anchorageoss/sei-tendermint/internal/state/mocks"
+	sf "github.com/anchorageoss/sei-tendermint/internal/state/test/factory"
+	"github.com/anchorageoss/sei-tendermint/internal/store"
+	"github.com/anchorageoss/sei-tendermint/internal/test/factory"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/version"
 
-	tmpubsub "github.com/ari-anchor/sei-tendermint/internal/pubsub"
-	tmquery "github.com/ari-anchor/sei-tendermint/internal/pubsub/query"
+	tmpubsub "github.com/anchorageoss/sei-tendermint/internal/pubsub"
+	tmquery "github.com/anchorageoss/sei-tendermint/internal/pubsub/query"
 )
 
 const evidenceChainID = "test_chain"

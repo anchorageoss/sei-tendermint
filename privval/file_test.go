@@ -12,13 +12,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ari-anchor/sei-tendermint/crypto"
-	"github.com/ari-anchor/sei-tendermint/crypto/ed25519"
-	tmjson "github.com/ari-anchor/sei-tendermint/libs/json"
-	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
-	tmtime "github.com/ari-anchor/sei-tendermint/libs/time"
-	tmproto "github.com/ari-anchor/sei-tendermint/proto/tendermint/types"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/ed25519"
+	tmjson "github.com/anchorageoss/sei-tendermint/libs/json"
+	tmrand "github.com/anchorageoss/sei-tendermint/libs/rand"
+	tmtime "github.com/anchorageoss/sei-tendermint/libs/time"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 func TestGenLoadValidator(t *testing.T) {

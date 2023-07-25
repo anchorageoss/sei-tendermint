@@ -3,8 +3,8 @@ package commands
 import (
 	"strconv"
 
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/internal/dbsync"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/internal/dbsync"
 	"github.com/spf13/cobra"
 )
 

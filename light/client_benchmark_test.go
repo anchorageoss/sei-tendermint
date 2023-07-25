@@ -8,11 +8,11 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/light"
-	"github.com/ari-anchor/sei-tendermint/light/provider"
-	dbs "github.com/ari-anchor/sei-tendermint/light/store/db"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/light"
+	"github.com/anchorageoss/sei-tendermint/light/provider"
+	dbs "github.com/anchorageoss/sei-tendermint/light/store/db"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // NOTE: block is produced every minute. Make sure the verification time

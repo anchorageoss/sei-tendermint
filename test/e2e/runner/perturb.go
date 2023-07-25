@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	rpctypes "github.com/ari-anchor/sei-tendermint/rpc/coretypes"
-	e2e "github.com/ari-anchor/sei-tendermint/test/e2e/pkg"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	rpctypes "github.com/anchorageoss/sei-tendermint/rpc/coretypes"
+	e2e "github.com/anchorageoss/sei-tendermint/test/e2e/pkg"
 )
 
 // Perturbs a running testnet.

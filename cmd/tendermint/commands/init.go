@@ -7,13 +7,13 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	tmos "github.com/ari-anchor/sei-tendermint/libs/os"
-	tmrand "github.com/ari-anchor/sei-tendermint/libs/rand"
-	tmtime "github.com/ari-anchor/sei-tendermint/libs/time"
-	"github.com/ari-anchor/sei-tendermint/privval"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	tmos "github.com/anchorageoss/sei-tendermint/libs/os"
+	tmrand "github.com/anchorageoss/sei-tendermint/libs/rand"
+	tmtime "github.com/anchorageoss/sei-tendermint/libs/time"
+	"github.com/anchorageoss/sei-tendermint/privval"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // MakeInitFilesCommand returns the command to initialize a fresh Tendermint Core instance.

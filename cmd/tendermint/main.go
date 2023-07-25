@@ -3,12 +3,12 @@ package main
 import (
 	"context"
 
-	"github.com/ari-anchor/sei-tendermint/cmd/tendermint/commands"
-	"github.com/ari-anchor/sei-tendermint/cmd/tendermint/commands/debug"
-	"github.com/ari-anchor/sei-tendermint/config"
-	"github.com/ari-anchor/sei-tendermint/libs/cli"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/node"
+	"github.com/anchorageoss/sei-tendermint/cmd/tendermint/commands"
+	"github.com/anchorageoss/sei-tendermint/cmd/tendermint/commands/debug"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/libs/cli"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/node"
 )
 
 func main() {

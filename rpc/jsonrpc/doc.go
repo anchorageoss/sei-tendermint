@@ -80,5 +80,5 @@
 //
 // # Examples
 //
-// - [Tendermint](https://github.com/ari-anchor/sei-tendermint/blob/master/rpc/core/routes.go)
+// - [Tendermint](https://github.com/anchorageoss/sei-tendermint/blob/master/rpc/core/routes.go)
 package jsonrpc

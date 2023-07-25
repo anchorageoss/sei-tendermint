@@ -16,10 +16,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	tmbytes "github.com/ari-anchor/sei-tendermint/libs/bytes"
-	"github.com/ari-anchor/sei-tendermint/libs/log"
-	"github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/client"
-	"github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/server"
+	tmbytes "github.com/anchorageoss/sei-tendermint/libs/bytes"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/rpc/jsonrpc/client"
+	"github.com/anchorageoss/sei-tendermint/rpc/jsonrpc/server"
 )
 
 // Client and Server should work over tcp or unix sockets

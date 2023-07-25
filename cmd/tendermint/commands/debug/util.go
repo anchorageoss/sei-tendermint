@@ -9,8 +9,8 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/ari-anchor/sei-tendermint/config"
-	rpchttp "github.com/ari-anchor/sei-tendermint/rpc/client/http"
+	"github.com/anchorageoss/sei-tendermint/config"
+	rpchttp "github.com/anchorageoss/sei-tendermint/rpc/client/http"
 )
 
 // dumpStatus gets node status state dump from the Tendermint RPC and writes it

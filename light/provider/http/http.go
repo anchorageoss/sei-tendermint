@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ari-anchor/sei-tendermint/light/provider"
-	rpcclient "github.com/ari-anchor/sei-tendermint/rpc/client"
-	rpchttp "github.com/ari-anchor/sei-tendermint/rpc/client/http"
-	"github.com/ari-anchor/sei-tendermint/rpc/coretypes"
-	rpctypes "github.com/ari-anchor/sei-tendermint/rpc/jsonrpc/types"
-	"github.com/ari-anchor/sei-tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/light/provider"
+	rpcclient "github.com/anchorageoss/sei-tendermint/rpc/client"
+	rpchttp "github.com/anchorageoss/sei-tendermint/rpc/client/http"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
+	rpctypes "github.com/anchorageoss/sei-tendermint/rpc/jsonrpc/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 var defaultOptions = Options{
