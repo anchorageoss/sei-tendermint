@@ -2,18 +2,17 @@
 Package server is used to start a new ABCI server.
 
 It contains two server implementation:
- * gRPC server
- * socket server
-
+  - gRPC server
+  - socket server
 */
 package server
 
 import (
 	"fmt"
 
-	"github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
+	"github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
 )
 
 func NewServer(logger log.Logger, protoAddr, transport string, app types.Application) (service.Service, error) {

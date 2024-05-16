@@ -6,10 +6,10 @@ import (
 	"math/bits"
 	"time"
 
-	"github.com/tendermint/tendermint/internal/libs/protoio"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
-	tmtime "github.com/tendermint/tendermint/libs/time"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/protoio"
+	tmbytes "github.com/anchorageoss/sei-tendermint/libs/bytes"
+	tmtime "github.com/anchorageoss/sei-tendermint/libs/time"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
 )
 
 var (
@@ -99,7 +99,7 @@ func (p *Proposal) ValidateBasic() error {
 // localtime <= proposedBlockTime + MsgDelay + Precision
 //
 // For more information on the meaning of 'timely', see the proposer-based timestamp specification:
-// https://github.com/tendermint/tendermint/tree/master/spec/consensus/proposer-based-timestamp
+// https://github.com/anchorageoss/sei-tendermint/tree/master/spec/consensus/proposer-based-timestamp
 func (p *Proposal) IsTimely(recvTime time.Time, sp SynchronyParams, round int32) bool {
 	// The message delay values are scaled as rounds progress.
 	// Every 10 rounds, the message delay is doubled to allow consensus to

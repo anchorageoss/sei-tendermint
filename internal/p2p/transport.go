@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 //go:generate ../../scripts/mockery_generate.sh Transport|Connection

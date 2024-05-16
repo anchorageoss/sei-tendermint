@@ -13,11 +13,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tendermint/tendermint/config"
-	sm "github.com/tendermint/tendermint/internal/state"
-	"github.com/tendermint/tendermint/libs/log"
-	dstypes "github.com/tendermint/tendermint/proto/tendermint/dbsync"
-	"github.com/tendermint/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/config"
+	sm "github.com/anchorageoss/sei-tendermint/internal/state"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	dstypes "github.com/anchorageoss/sei-tendermint/proto/tendermint/dbsync"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 const ApplicationDBSubdirectory = "application.db"

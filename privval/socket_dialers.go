@@ -5,8 +5,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto"
-	tmnet "github.com/tendermint/tendermint/libs/net"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	tmnet "github.com/anchorageoss/sei-tendermint/libs/net"
 )
 
 // Socket errors.

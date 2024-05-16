@@ -18,11 +18,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/crypto/sr25519"
-	"github.com/tendermint/tendermint/internal/libs/async"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/ed25519"
+	"github.com/anchorageoss/sei-tendermint/crypto/sr25519"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/async"
+	tmrand "github.com/anchorageoss/sei-tendermint/libs/rand"
 )
 
 // Run go test -update from within this module

@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"encoding/json"
 
+	"github.com/anchorageoss/sei-tendermint/crypto"
+	"github.com/anchorageoss/sei-tendermint/crypto/encoding"
+	"github.com/anchorageoss/sei-tendermint/internal/jsontypes"
 	"github.com/gogo/protobuf/jsonpb"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/encoding"
-	"github.com/tendermint/tendermint/internal/jsontypes"
 )
 
 const (

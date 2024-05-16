@@ -10,8 +10,8 @@ import (
 	proto "github.com/gogo/protobuf/proto"
 	_ "github.com/gogo/protobuf/types"
 	github_com_gogo_protobuf_types "github.com/gogo/protobuf/types"
-	crypto "github.com/tendermint/tendermint/proto/tendermint/crypto"
-	types1 "github.com/tendermint/tendermint/proto/tendermint/types"
+	crypto "github.com/anchorageoss/sei-tendermint/proto/tendermint/crypto"
+	types1 "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -217,7 +217,7 @@ func (ResponseVerifyVoteExtension_VerifyStatus) EnumDescriptor() ([]byte, []int)
 }
 
 // TxAction contains App-provided information on what to do with a transaction that is part of a raw proposal
-// Deprecate entire usage: https://github.com/tendermint/tendermint/pull/9283
+// Deprecate entire usage: https://github.com/anchorageoss/sei-tendermint/pull/9283
 type TxRecord_TxAction int32
 
 const (
@@ -4501,7 +4501,7 @@ type Misbehavior struct {
 	Time time.Time `protobuf:"bytes,4,opt,name=time,proto3,stdtime" json:"time"`
 	// Total voting power of the validator set in case the ABCI application does
 	// not store historical validators.
-	// https://github.com/tendermint/tendermint/issues/4581
+	// https://github.com/anchorageoss/sei-tendermint/issues/4581
 	TotalVotingPower int64 `protobuf:"varint,5,opt,name=total_voting_power,json=totalVotingPower,proto3" json:"total_voting_power,omitempty"`
 }
 
@@ -4583,7 +4583,7 @@ type Evidence struct {
 	Time time.Time `protobuf:"bytes,4,opt,name=time,proto3,stdtime" json:"time"`
 	// Total voting power of the validator set in case the ABCI application does
 	// not store historical validators.
-	// https://github.com/tendermint/tendermint/issues/4581
+	// https://github.com/anchorageoss/sei-tendermint/issues/4581
 	TotalVotingPower int64 `protobuf:"varint,5,opt,name=total_voting_power,json=totalVotingPower,proto3" json:"total_voting_power,omitempty"`
 }
 

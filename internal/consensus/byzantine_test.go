@@ -1,7 +1,7 @@
 package consensus
 
 // PSU: Commenting this out since it is inherently flaky (see comments re.
-// deadlock below). This seems to be fixed in later TM versions: https://github.com/tendermint/tendermint/blob/main/consensus/byzantine_test.go
+// deadlock below). This seems to be fixed in later TM versions: https://github.com/anchorageoss/sei-tendermint/blob/main/consensus/byzantine_test.go
 //import (
 //	"context"
 //	"fmt"
@@ -16,21 +16,21 @@ package consensus
 //	dbm "github.com/tendermint/tm-db"
 //	"go.opentelemetry.io/otel/sdk/trace"
 //
-//	abciclient "github.com/tendermint/tendermint/abci/client"
-//	"github.com/tendermint/tendermint/abci/example/kvstore"
-//	abci "github.com/tendermint/tendermint/abci/types"
-//	"github.com/tendermint/tendermint/internal/eventbus"
-//	"github.com/tendermint/tendermint/internal/evidence"
-//	"github.com/tendermint/tendermint/internal/mempool"
-//	"github.com/tendermint/tendermint/internal/p2p"
-//	sm "github.com/tendermint/tendermint/internal/state"
-//	"github.com/tendermint/tendermint/internal/store"
-//	"github.com/tendermint/tendermint/internal/test/factory"
-//	"github.com/tendermint/tendermint/libs/log"
-//	tmtime "github.com/tendermint/tendermint/libs/time"
-//	tmcons "github.com/tendermint/tendermint/proto/tendermint/consensus"
-//	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-//	"github.com/tendermint/tendermint/types"
+//	abciclient "github.com/anchorageoss/sei-tendermint/abci/client"
+//	"github.com/anchorageoss/sei-tendermint/abci/example/kvstore"
+//	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+//	"github.com/anchorageoss/sei-tendermint/internal/eventbus"
+//	"github.com/anchorageoss/sei-tendermint/internal/evidence"
+//	"github.com/anchorageoss/sei-tendermint/internal/mempool"
+//	"github.com/anchorageoss/sei-tendermint/internal/p2p"
+//	sm "github.com/anchorageoss/sei-tendermint/internal/state"
+//	"github.com/anchorageoss/sei-tendermint/internal/store"
+//	"github.com/anchorageoss/sei-tendermint/internal/test/factory"
+//	"github.com/anchorageoss/sei-tendermint/libs/log"
+//	tmtime "github.com/anchorageoss/sei-tendermint/libs/time"
+//	tmcons "github.com/anchorageoss/sei-tendermint/proto/tendermint/consensus"
+//	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+//	"github.com/anchorageoss/sei-tendermint/types"
 //)
 //
 //// Byzantine node sends two different prevotes (nil and blockID) to the same

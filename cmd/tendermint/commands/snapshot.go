@@ -3,9 +3,9 @@ package commands
 import (
 	"strconv"
 
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/internal/dbsync"
 	"github.com/spf13/cobra"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/internal/dbsync"
 )
 
 func MakeSnapshotCommand(confGetter func(*cobra.Command) (*config.Config, error)) *cobra.Command {

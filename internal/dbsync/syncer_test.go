@@ -6,12 +6,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/internal/state"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/proto/tendermint/dbsync"
+	"github.com/anchorageoss/sei-tendermint/types"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/internal/state"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/proto/tendermint/dbsync"
-	"github.com/tendermint/tendermint/types"
 )
 
 func getTestSyncer(t *testing.T) *Syncer {

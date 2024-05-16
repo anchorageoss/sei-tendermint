@@ -1,4 +1,4 @@
-//nolint: gosec
+// nolint: gosec
 package main
 
 import (
@@ -11,8 +11,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/tendermint/tendermint/libs/log"
-	e2e "github.com/tendermint/tendermint/test/e2e/pkg"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	e2e "github.com/anchorageoss/sei-tendermint/test/e2e/pkg"
 )
 
 const (

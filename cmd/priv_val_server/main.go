@@ -19,11 +19,11 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	"github.com/tendermint/tendermint/libs/log"
-	tmnet "github.com/tendermint/tendermint/libs/net"
-	"github.com/tendermint/tendermint/privval"
-	grpcprivval "github.com/tendermint/tendermint/privval/grpc"
-	privvalproto "github.com/tendermint/tendermint/proto/tendermint/privval"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	tmnet "github.com/anchorageoss/sei-tendermint/libs/net"
+	"github.com/anchorageoss/sei-tendermint/privval"
+	grpcprivval "github.com/anchorageoss/sei-tendermint/privval/grpc"
+	privvalproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/privval"
 )
 
 var (

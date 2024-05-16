@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/internal/libs/clist"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/clist"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // TxInfo are parameters that get passed when attempting to add a tx to the

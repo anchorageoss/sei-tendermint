@@ -14,11 +14,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/internal/libs/protoio"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
-	tmp2p "github.com/tendermint/tendermint/proto/tendermint/p2p"
-	"github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/internal/libs/protoio"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/libs/service"
+	tmp2p "github.com/anchorageoss/sei-tendermint/proto/tendermint/p2p"
+	"github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
 )
 
 const maxPingPongPacketSize = 1024 // bytes
@@ -288,7 +288,7 @@ func TestMConnectionMultiplePings(t *testing.T) {
 	t.Cleanup(waitAll(mconn))
 
 	// sending 3 pings in a row (abuse)
-	// see https://github.com/tendermint/tendermint/issues/1190
+	// see https://github.com/anchorageoss/sei-tendermint/issues/1190
 	protoReader := protoio.NewDelimitedReader(server, maxPingPongPacketSize)
 	protoWriter := protoio.NewDelimitedWriter(server)
 	var pkt tmp2p.Packet

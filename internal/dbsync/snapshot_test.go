@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"testing"
 
+	"github.com/anchorageoss/sei-tendermint/config"
+	dstypes "github.com/anchorageoss/sei-tendermint/proto/tendermint/dbsync"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/config"
-	dstypes "github.com/tendermint/tendermint/proto/tendermint/dbsync"
 )
 
 func TestSnapshot(t *testing.T) {

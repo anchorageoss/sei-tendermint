@@ -3,7 +3,7 @@ package factory
 import (
 	"testing"
 
-	"github.com/tendermint/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 func TestMakeHeader(t *testing.T) {

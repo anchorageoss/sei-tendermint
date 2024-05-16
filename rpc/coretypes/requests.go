@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/tendermint/tendermint/internal/jsontypes"
-	"github.com/tendermint/tendermint/libs/bytes"
-	"github.com/tendermint/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/internal/jsontypes"
+	"github.com/anchorageoss/sei-tendermint/libs/bytes"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 type RequestSubscribe struct {

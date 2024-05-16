@@ -7,13 +7,13 @@ import (
 
 	"github.com/rs/cors"
 
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/internal/pubsub"
-	"github.com/tendermint/tendermint/internal/rpc/core"
-	"github.com/tendermint/tendermint/internal/state"
-	"github.com/tendermint/tendermint/internal/state/indexer"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/rpc/jsonrpc/server"
+	"github.com/anchorageoss/sei-tendermint/config"
+	"github.com/anchorageoss/sei-tendermint/internal/pubsub"
+	"github.com/anchorageoss/sei-tendermint/internal/rpc/core"
+	"github.com/anchorageoss/sei-tendermint/internal/state"
+	"github.com/anchorageoss/sei-tendermint/internal/state/indexer"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	"github.com/anchorageoss/sei-tendermint/rpc/jsonrpc/server"
 )
 
 // Server defines parameters for running an Inspector rpc server.
@@ -124,7 +124,7 @@ func serverRPCConfig(r *config.RPCConfig) *server.Config {
 	cfg.MaxHeaderBytes = r.MaxHeaderBytes
 	// If necessary adjust global WriteTimeout to ensure it's greater than
 	// TimeoutBroadcastTxCommit.
-	// See https://github.com/tendermint/tendermint/issues/3435
+	// See https://github.com/anchorageoss/sei-tendermint/issues/3435
 	// Note we don't need to adjust anything if the timeout is already unlimited.
 	if cfg.WriteTimeout > 0 && cfg.WriteTimeout <= r.TimeoutBroadcastTxCommit {
 		cfg.WriteTimeout = r.TimeoutBroadcastTxCommit + 1*time.Second

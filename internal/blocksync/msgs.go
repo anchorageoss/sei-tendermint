@@ -1,8 +1,8 @@
 package blocksync
 
 import (
-	bcproto "github.com/tendermint/tendermint/proto/tendermint/blocksync"
-	"github.com/tendermint/tendermint/types"
+	bcproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/blocksync"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 const (

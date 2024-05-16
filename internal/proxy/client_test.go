@@ -16,13 +16,13 @@ import (
 
 	"gotest.tools/assert"
 
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	abcimocks "github.com/tendermint/tendermint/abci/client/mocks"
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	"github.com/tendermint/tendermint/abci/server"
-	"github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/log"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
+	abciclient "github.com/anchorageoss/sei-tendermint/abci/client"
+	abcimocks "github.com/anchorageoss/sei-tendermint/abci/client/mocks"
+	"github.com/anchorageoss/sei-tendermint/abci/example/kvstore"
+	"github.com/anchorageoss/sei-tendermint/abci/server"
+	"github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	tmrand "github.com/anchorageoss/sei-tendermint/libs/rand"
 )
 
 //----------------------------------------

@@ -14,12 +14,12 @@ import (
 	"github.com/google/orderedcode"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/tendermint/tendermint/internal/eventbus"
-	clist "github.com/tendermint/tendermint/internal/libs/clist"
-	sm "github.com/tendermint/tendermint/internal/state"
-	"github.com/tendermint/tendermint/libs/log"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/internal/eventbus"
+	clist "github.com/anchorageoss/sei-tendermint/internal/libs/clist"
+	sm "github.com/anchorageoss/sei-tendermint/internal/state"
+	"github.com/anchorageoss/sei-tendermint/libs/log"
+	tmproto "github.com/anchorageoss/sei-tendermint/proto/tendermint/types"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 // key prefixes
@@ -102,11 +102,11 @@ func (evpool *Pool) PendingEvidence(maxBytes int64) ([]types.Evidence, int64) {
 
 // Update takes both the new state and the evidence committed at that height and performs
 // the following operations:
-// 1. Take any conflicting votes from consensus and use the state's LastBlockTime to form
-//    DuplicateVoteEvidence and add it to the pool.
-// 2. Update the pool's state which contains evidence params relating to expiry.
-// 3. Moves pending evidence that has now been committed into the committed pool.
-// 4. Removes any expired evidence based on both height and time.
+//  1. Take any conflicting votes from consensus and use the state's LastBlockTime to form
+//     DuplicateVoteEvidence and add it to the pool.
+//  2. Update the pool's state which contains evidence params relating to expiry.
+//  3. Moves pending evidence that has now been committed into the committed pool.
+//  4. Removes any expired evidence based on both height and time.
 func (evpool *Pool) Update(ctx context.Context, state sm.State, ev types.EvidenceList) {
 	// sanity check
 	if state.LastBlockHeight <= evpool.state.LastBlockHeight {

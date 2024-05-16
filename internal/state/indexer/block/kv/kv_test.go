@@ -8,10 +8,10 @@ import (
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/internal/pubsub/query"
-	blockidxkv "github.com/tendermint/tendermint/internal/state/indexer/block/kv"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/anchorageoss/sei-tendermint/abci/types"
+	"github.com/anchorageoss/sei-tendermint/internal/pubsub/query"
+	blockidxkv "github.com/anchorageoss/sei-tendermint/internal/state/indexer/block/kv"
+	"github.com/anchorageoss/sei-tendermint/types"
 )
 
 func TestBlockIndexer(t *testing.T) {

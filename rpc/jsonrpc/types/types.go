@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"strings"
 
-	tmjson "github.com/tendermint/tendermint/libs/json"
-	"github.com/tendermint/tendermint/rpc/coretypes"
+	tmjson "github.com/anchorageoss/sei-tendermint/libs/json"
+	"github.com/anchorageoss/sei-tendermint/rpc/coretypes"
 )
 
 // ErrorCode is the type of JSON-RPC error codes.

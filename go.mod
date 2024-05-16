@@ -1,4 +1,4 @@
-module github.com/tendermint/tendermint
+module github.com/anchorageoss/sei-tendermint
 
 go 1.19
 
