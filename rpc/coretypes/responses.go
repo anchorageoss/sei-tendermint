@@ -282,7 +282,7 @@ type ResultTx struct {
 // Result of searching for txs
 type ResultTxSearch struct {
 	Txs        []*ResultTx `json:"txs"`
-	TotalCount int         `json:"total_count,string"`
+	TotalCount int         `json:"total_count"`
 }
 
 // ResultBlockSearch defines the RPC response type for a block search by events.
