@@ -1,6 +1,6 @@
 syntax = "proto3";
 package seitendermint.privval;
-option  go_package = "github.com/anchorageoss/sei-tendermint/tendermint/proto/tendermint/privval";
+option  go_package = "github.com/anchorageoss/sei-tendermint/proto/tendermint/privval";
 
 import "tendermint/privval/types.proto";
 

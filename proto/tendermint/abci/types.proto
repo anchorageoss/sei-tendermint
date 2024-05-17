@@ -1,7 +1,7 @@
 syntax = "proto3";
 package seitendermint.abci;
 
-option go_package = "github.com/anchorageoss/sei-tendermint/tendermint/abci/types";
+option go_package = "github.com/anchorageoss/sei-tendermint/abci/types";
 
 import "tendermint/crypto/proof.proto";
 import "tendermint/crypto/keys.proto";
@@ -309,7 +309,6 @@ message ResponseDeliverTx {
   repeated Event events     = 7
       [(gogoproto.nullable) = false, (gogoproto.jsontag) = "events,omitempty"];  // nondeterministic
   string codespace = 8;
-  EvmTxInfo evm_tx_info = 9;
 }
 
 message ResponseEndBlock {
