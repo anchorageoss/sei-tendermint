@@ -5,7 +5,7 @@ package types
 
 import (
 	fmt "fmt"
-	crypto "github.com/anchorageoss/sei-tendermint/tendermint/proto/tendermint/crypto"
+	crypto "github.com/anchorageoss/sei-tendermint/proto/tendermint/crypto"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	io "io"
