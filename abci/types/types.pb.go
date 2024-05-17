@@ -2886,7 +2886,7 @@ type ResponseDeliverTx struct {
 	GasUsed   int64      `protobuf:"varint,6,opt,name=gas_used,proto3" json:"gas_used,omitempty"`
 	Events    []Event    `protobuf:"bytes,7,rep,name=events,proto3" json:"events,omitempty"`
 	Codespace string     `protobuf:"bytes,8,opt,name=codespace,proto3" json:"codespace,omitempty"`
-	EvmTxInfo *EvmTxInfo `protobuf:"bytes,9,opt,name=evm_tx_info,json=evmTxInfo,proto3" json:"evm_tx_info,omitempty"`
+	EvmTxInfo *EvmTxInfo `protobuf:"bytes,9,opt,name=evm_tx_info,json=evmTxInfo,proto3" json:"-"`
 }
 
 func (m *ResponseDeliverTx) Reset()         { *m = ResponseDeliverTx{} }
