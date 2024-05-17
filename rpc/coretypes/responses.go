@@ -272,7 +272,7 @@ type ResultCheckTx struct {
 // Result of querying for a tx
 type ResultTx struct {
 	Hash     bytes.HexBytes    `json:"hash"`
-	Height   int64             `json:"height,string"`
+	Height   int64             `json:"height"`
 	Index    uint32            `json:"index"`
 	TxResult abci.ExecTxResult `json:"tx_result"`
 	Tx       types.Tx          `json:"tx"`
