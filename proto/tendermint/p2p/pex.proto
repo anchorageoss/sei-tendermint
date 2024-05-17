@@ -1,14 +1,14 @@
 syntax = "proto3";
-package tendermint.p2p;
+package seitendermint.p2p;
 
-option go_package = "github.com/tendermint/tendermint/proto/tendermint/p2p";
+option go_package = "github.com/anchorageoss/sei-tendermint/tendermint/proto/tendermint/p2p";
 
 import "gogoproto/gogo.proto";
 
 message PexAddress {
   string url = 1 [(gogoproto.customname) = "URL"];
 
-  reserved 2, 3;  // See https://github.com/tendermint/spec/pull/352
+  reserved 2, 3;  // See https://github.com/anchorageoss/sei-tendermint/spec/pull/352
 }
 
 message PexRequest {}
@@ -18,7 +18,7 @@ message PexResponse {
 }
 
 message PexMessage {
-  reserved 1, 2;  // See https://github.com/tendermint/spec/pull/352
+  reserved 1, 2;  // See https://github.com/anchorageoss/sei-tendermint/spec/pull/352
   oneof sum {
     PexRequest  pex_request  = 3;
     PexResponse pex_response = 4;

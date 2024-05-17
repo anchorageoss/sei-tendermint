@@ -1,11 +1,11 @@
 syntax = "proto3";
-package tendermint.privval;
+package seitendermint.privval;
 
 import "tendermint/crypto/keys.proto";
 import "tendermint/types/types.proto";
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/tendermint/tendermint/proto/tendermint/privval";
+option go_package = "github.com/anchorageoss/sei-tendermint/tendermint/proto/tendermint/privval";
 
 enum Errors {
   ERRORS_UNKNOWN             = 0;
@@ -28,31 +28,31 @@ message PubKeyRequest {
 
 // PubKeyResponse is a response message containing the public key.
 message PubKeyResponse {
-  tendermint.crypto.PublicKey pub_key = 1 [(gogoproto.nullable) = false];
+  seitendermint.crypto.PublicKey pub_key = 1 [(gogoproto.nullable) = false];
   RemoteSignerError           error   = 2;
 }
 
 // SignVoteRequest is a request to sign a vote
 message SignVoteRequest {
-  tendermint.types.Vote vote     = 1;
+  seitendermint.types.Vote vote     = 1;
   string                chain_id = 2;
 }
 
 // SignedVoteResponse is a response containing a signed vote or an error
 message SignedVoteResponse {
-  tendermint.types.Vote vote  = 1 [(gogoproto.nullable) = false];
+  seitendermint.types.Vote vote  = 1 [(gogoproto.nullable) = false];
   RemoteSignerError     error = 2;
 }
 
 // SignProposalRequest is a request to sign a proposal
 message SignProposalRequest {
-  tendermint.types.Proposal proposal = 1;
+  seitendermint.types.Proposal proposal = 1;
   string                    chain_id = 2;
 }
 
 // SignedProposalResponse is response containing a signed proposal or an error
 message SignedProposalResponse {
-  tendermint.types.Proposal proposal = 1 [(gogoproto.nullable) = false];
+  seitendermint.types.Proposal proposal = 1 [(gogoproto.nullable) = false];
   RemoteSignerError         error    = 2;
 }
 
@@ -77,8 +77,8 @@ message Message {
 
 // AuthSigMessage is duplicated from p2p prior to the P2P refactor.
 // It is used for the SecretConnection until we migrate privval to gRPC.
-// https://github.com/tendermint/tendermint/issues/4698
+// https://github.com/anchorageoss/sei-tendermint/tendermint/issues/4698
 message AuthSigMessage {
-  tendermint.crypto.PublicKey pub_key = 1 [(gogoproto.nullable) = false];
+  seitendermint.crypto.PublicKey pub_key = 1 [(gogoproto.nullable) = false];
   bytes                       sig     = 2;
 }

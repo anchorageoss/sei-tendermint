@@ -1,7 +1,7 @@
 syntax = "proto3";
-package tendermint.p2p;
+package seitendermint.p2p;
 
-option go_package = "github.com/tendermint/tendermint/proto/tendermint/p2p";
+option go_package = "github.com/anchorageoss/sei-tendermint/tendermint/proto/tendermint/p2p";
 
 import "gogoproto/gogo.proto";
 import "tendermint/crypto/keys.proto";
@@ -25,6 +25,6 @@ message Packet {
 }
 
 message AuthSigMessage {
-  tendermint.crypto.PublicKey pub_key = 1 [(gogoproto.nullable) = false];
+  seitendermint.crypto.PublicKey pub_key = 1 [(gogoproto.nullable) = false];
   bytes                       sig     = 2;
 }

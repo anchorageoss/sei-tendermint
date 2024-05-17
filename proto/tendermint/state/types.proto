@@ -1,7 +1,7 @@
 syntax = "proto3";
-package tendermint.state;
+package seitendermint.state;
 
-option go_package = "github.com/tendermint/tendermint/proto/tendermint/state";
+option go_package = "github.com/anchorageoss/sei-tendermint/tendermint/proto/tendermint/state";
 
 import "gogoproto/gogo.proto";
 import "tendermint/abci/types.proto";
@@ -12,25 +12,25 @@ import "tendermint/version/types.proto";
 import "google/protobuf/timestamp.proto";
 
 message ABCIResponses {
-  repeated tendermint.abci.ResponseDeliverTx deliver_txs = 1;
-  tendermint.abci.ResponseEndBlock           end_block   = 2;
-  tendermint.abci.ResponseBeginBlock         begin_block = 3;
+  repeated seitendermint.abci.ResponseDeliverTx deliver_txs = 1;
+  seitendermint.abci.ResponseEndBlock           end_block   = 2;
+  seitendermint.abci.ResponseBeginBlock         begin_block = 3;
 }
 
 // ValidatorsInfo represents the latest validator set, or the last height it changed
 message ValidatorsInfo {
-  tendermint.types.ValidatorSet validator_set       = 1;
+  seitendermint.types.ValidatorSet validator_set       = 1;
   int64                         last_height_changed = 2;
 }
 
 // ConsensusParamsInfo represents the latest consensus params, or the last height it changed
 message ConsensusParamsInfo {
-  tendermint.types.ConsensusParams consensus_params    = 1 [(gogoproto.nullable) = false];
+  seitendermint.types.ConsensusParams consensus_params    = 1 [(gogoproto.nullable) = false];
   int64                            last_height_changed = 2;
 }
 
 message Version {
-  tendermint.version.Consensus consensus = 1 [(gogoproto.nullable) = false];
+  seitendermint.version.Consensus consensus = 1 [(gogoproto.nullable) = false];
   string                       software  = 2;
 }
 
@@ -43,7 +43,7 @@ message State {
 
   // LastBlockHeight=0 at genesis (ie. block(H=0) does not exist)
   int64                    last_block_height = 3;
-  tendermint.types.BlockID last_block_id     = 4
+  seitendermint.types.BlockID last_block_id     = 4
       [(gogoproto.nullable) = false, (gogoproto.customname) = "LastBlockID"];
   google.protobuf.Timestamp last_block_time = 5
       [(gogoproto.nullable) = false, (gogoproto.stdtime) = true];
@@ -54,14 +54,14 @@ message State {
   // Note that if s.LastBlockHeight causes a valset change,
   // we set s.LastHeightValidatorsChanged = s.LastBlockHeight + 1 + 1
   // Extra +1 due to nextValSet delay.
-  tendermint.types.ValidatorSet next_validators                = 6;
-  tendermint.types.ValidatorSet validators                     = 7;
-  tendermint.types.ValidatorSet last_validators                = 8;
+  seitendermint.types.ValidatorSet next_validators                = 6;
+  seitendermint.types.ValidatorSet validators                     = 7;
+  seitendermint.types.ValidatorSet last_validators                = 8;
   int64                         last_height_validators_changed = 9;
 
   // Consensus parameters used for validating blocks.
   // Changes returned by EndBlock and updated after Commit.
-  tendermint.types.ConsensusParams consensus_params                     = 10 [(gogoproto.nullable) = false];
+  seitendermint.types.ConsensusParams consensus_params                     = 10 [(gogoproto.nullable) = false];
   int64                            last_height_consensus_params_changed = 11;
 
   // Merkle root of the results from executing prev block
